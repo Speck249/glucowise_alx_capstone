@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signupContainer {
+  background-image: url(../../Images/login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.formWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  padding: 1em;
+  border: none;
+  border-radius: 1rem;
+  background-color: bisque;
+}
+
+.form h1 {
+   font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 1rem;
+}
+
+.imgContainer {
+  margin-right: 15px;
+}
+
+.googleContainer {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 0.7em;
+  border: 1px solid black;
+  border-radius: 4rem;
+  width: 60%;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+}
+
+.LineBreak {
+  position: relative;
+  margin: 2rem 0 2rem 0;
+}
+
+.divider {
+  border-top: 1px solid black;
+}
+
+.dividerContent {
+  font-size: 13px;
+  line-height: 21px;
+  position: absolute;
+  top: -11px;
+  left: 45%;
+  padding: 0 6px;
+  background-color: white;
+}
+
+.nameLabel {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3px;
+  gap: 8.4rem;
+}
+
+.nameInput {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6em;
+}
+
+.form label {
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 3px;
+  margin-left: 0.4em;
+}
+
+.form input {
+  font-size: 14px;
+  padding: 1em;
+  margin-bottom: 1em;
+  margin-left: 0.3em;
+  border: none;
+  border-radius: 4px;
+}
+
+.buttonContainer {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.6em;
+  margin: 0 auto;
+  margin-top: 1.3em;
+  margin-bottom: 1.2em;
+  width: 120px;
+  border: solid 1.5px black;
+  border-radius: 2em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+}
+
+.prompt p {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.prompt span {
+    color: blue;
+}
