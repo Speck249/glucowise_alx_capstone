@@ -6,9 +6,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HeroPage from '../Pages/hero';
 import DashboardPage from '../Pages/dashboard';
-import ContactPage from '../Pages/contact';
-import LogIn from '../Pages/login';
-import SignUp from '../Pages/signup';
+import SupportPage from '../Pages/support';
+import LoginPage from '../Pages/login';
+import SignupPage from '../Pages/signup';
 import './App.css';
 
 const App = () => {
@@ -17,9 +17,9 @@ const App = () => {
           <Routes>
             <Route path='/' element={<HeroPage />} /> 
             <Route path='/dashboard' element={<DashboardPage />} />
-            <Route path='/login' element={<LogIn />} />
-            <Route path='/signup' element={<SignUp />} />
-            <Route path='/contact' element={<ContactPage />} />
+            <Route path='/login' element={<LoginPage />} />
+            <Route path='/signup' element={<SignupPage />} />
+            <Route path='/support' element={<SupportPage />} />
           </Routes>
         </Router>
     )
