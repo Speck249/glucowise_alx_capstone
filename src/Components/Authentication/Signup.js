@@ -4,7 +4,7 @@ import googleIcon from '../../Images/google_icon.png';
 import './Signup.css'
 
 
-const SignupPage = () => {
+const Signup = () => {
   return (
     <div className='signupContainer'>
       <div className='formWrap'>
@@ -75,4 +75,4 @@ const SignupPage = () => {
   );
 };
 
-export default SignupPage;
+export default Signup;
