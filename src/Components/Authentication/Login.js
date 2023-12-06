@@ -4,7 +4,7 @@ import googleIcon from '../../Images/google_icon.png';
 import './Login.css';
 
 
-const LoginPage = () => {
+const LogIn = () => {
   return (
     <div className='pageContainer'>
       <div className='loginformWrap'>
@@ -53,4 +53,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default LogIn;
