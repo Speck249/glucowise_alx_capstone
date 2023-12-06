@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;  
+}
+
+.FooterContainer {
+  background-color: #004d24;
+}
+
+.FooterWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.Newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.NewsletterTitle {
+  font-size: 1.2rem;
+  color: burlywood;
+  text-align: center;
+  margin-bottom: 0.7em;
+}
+
+.NewsletterBody {
+  color: bisque;
+  font-size: 14px;
+  text-align: center;
+}
+
+.Form {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.Form label {
+   display: none;
+}
+
+.Form input {
+   color: #000;
+   text-align: left;
+   width: 100%;
+   padding: 10px 25px;
+   margin-right: 2em;
+   border-radius: 2px;
+   outline: none;
+}
+
+.Form button {
+   font-size: 1rem;
+   color: #fff;
+   padding: 10px 20px;
+   margin-left: 10px;
+   border-radius: 3px;
+   background-color: blue;
+   cursor: pointer;
+}
+
+.FooterLinkContainer {
+   display: flex;
+}
+
+.FooterLinks {
+  color: bisque;
+  font-size: 14px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 100%;
+}
+
+.FooterCopyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: bisque;
+  margin-top: 2rem;
+}
