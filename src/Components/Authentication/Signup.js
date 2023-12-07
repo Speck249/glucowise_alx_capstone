@@ -12,7 +12,11 @@ const Signup = () => {
           <div className='form'> 
             <h1>SIGN UP</h1>
             <button className='googleContainer'><span className='imgContainer'>
-              <img src={googleIcon} width={25} height={25} alt='Google Icon'/></span> 
+              <img 
+                src={googleIcon}
+                width={25}
+                height={25}
+                alt='Google Icon'/></span> 
               Sign up with Google
             </button>
             <div className='LineBreak'>
@@ -27,37 +31,50 @@ const Signup = () => {
 
             <div className='nameInput'>  
               <input
-                type="text" 
-                placeholder='Aster'
+                type='text'
+                id='firstName'
+                name='firstName'
               //value={firstName}
               //onChange={(e) => setfirstName(e.target.value)} 
+                placeholder='Aster'
+                autoComplete='on'
+                autoFocus
                 required
               />
        
               <input
-                type="text"
-                placeholder='Awoke' 
+                type='text'
+                id='lastName'
+                name='lastName'
               //value={lastName}
               //onChange={(e) => setlastName(e.target.value)} 
+                placeholder='Awoke' 
+                autoComplete='on'
                 required
               />
             </div>
 
             <label htmlFor='email'>Email</label>
             <input
-              type="email"
-              placeholder="asterawoke@gmail.com" 
+              type='email'
+              id='email-input'
+              name='email-input'
             //value={email}
             //onChange={(e) => setEmail(e.target.value)}
+              placeholder='asterawoke@gmail.com'
+              autoComplete='on'
               required
             />
             
             <label htmlFor='password'>Password</label>
             <input
-              type="password"
-              placeholder="Create a strong password"
+              type='password'
+              id='pwd-input'
+              name='pwd-input'
             //value={password}
             //onChange={(e) => setPassword(e.target.value)}
+              placeholder='Create a strong password'
+              autoComplete='on'
               required
             />
             
