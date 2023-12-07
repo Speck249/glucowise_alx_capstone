@@ -1,6 +1,6 @@
 import React from 'react';
-import Hero from '../Components/Hero/Hero.js';
-import Footer from '../Components/Footer/Footer.js';
+import Hero from '../Components/Hero/Hero';
+import Footer from '../Components/Footer/Footer';
 
 const HeroPage = () => {
 
