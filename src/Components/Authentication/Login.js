@@ -12,7 +12,11 @@ const LogIn = () => {
           <div className='loginform'> 
             <h1>WELCOME</h1>
             <button className='logingoogleContainer'><span className='loginimgContainer'>
-              <img src={googleIcon} width={25} height={25} alt='Google Icon'/></span> 
+              <img 
+                src={googleIcon}
+                width={25}
+                height={25}
+                alt='Google Icon'/></span> 
               Log In with Google
             </button>
             
@@ -21,22 +25,29 @@ const LogIn = () => {
               <div className='loginContent'>or</div>
             </div>
 
-            <label htmlFor='email'>Email</label>
+            <label htmlFor='email' id='email-label'>Email</label>
             <input
-              type="email"
-              placeholder="asterawoke@gmail.com" 
+              type='email'
+              id='userEmail'
+              name='userEmail'
             //value={email}
             //onChange={(e) => setEmail(e.target.value)}
+              placeholder='asterawoke@gmail.com'
+              autoComplete='on'
+              autoFocus
               required
             />
             
-            <label htmlFor='password'>Password</label>
+            <label htmlFor='password' id='password-label'>Password</label>
               <input
-                type="password"
-                placeholder="Create a strong password"
-                //value={password}
-                //onChange={(e) => setPassword(e.target.value)}
-                 required
+                type='password'
+                id='userPassword'
+                name='userPassword'
+              //value={password}
+              //onChange={(e) => setPassword(e.target.value)}
+                placeholder='Create a strong password'
+                autoComplete='on'
+                required
             />
 
             <div className='loginbtnContainer'>
