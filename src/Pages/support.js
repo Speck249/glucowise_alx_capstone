@@ -1,6 +1,6 @@
 import React from 'react';
-import Support from '../Components/Support/Support';
-import Navbar from '../Components/NavBar/Navbar';
+import Support from '../Components/Support/Support.js';
+import Navbar from '../Components/Navbar/Navbar.js';
 
 
 const SupportPage = () => {
