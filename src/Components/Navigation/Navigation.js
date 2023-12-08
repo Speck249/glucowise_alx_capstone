@@ -35,7 +35,7 @@ const Navigation = () => {
             <img
               src={GlucoWise}
               width={58}
-              height={50}
+              height={54}
               alt='GlucoWise Logo'
             />
           </LinkRouter>
@@ -93,7 +93,7 @@ const Navigation = () => {
         </div>
       
         <div className='navButton'>
-          <LinkScroll to='/login'> Get Started </LinkScroll>
+          <LinkRouter to='/login'> Get Started </LinkRouter>
         </div>
       </nav>
     </Scrollspy>
