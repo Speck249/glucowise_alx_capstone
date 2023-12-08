@@ -1,98 +1,96 @@
 import React from 'react';
-import { Link as LinkRouter } from 'react-router-dom';
+import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram  } from 'react-icons/fa';
 import './Footer.css';
 
 
 const Footer = () => {
-    //const [email, setEmail] = useState('');
-    //const [subscriptionStatus, setSubscriptionStatus] = useState('');
+   /* const [email, setEmail] = useState('');
+    const [subscriptionStatus, setSubscriptionStatus] = useState('');
 
-    //const handleSubmit = async (e) => {
-    //  try {
-    //    const newsletterData = {
-    //      email
-    //    };
+    const handleSubmit = async (e) => {
+        try {
+            const newsletterData = {
+                email
+            };
             
-    //   const docRef = await addDoc(collection(db, 'newsletters'), newsletterData);    
-    //   setEmail('');    
-    //   setSubscriptionStatus(true);
-    //   setTimeout(() => {
-    //   setSubscriptionStatus(null);
-    //   }, 5000);
-    //   } catch (error) {
-    //     setSubscriptionStatus(false); 
-    //   setTimeout(() => {
-    //     setSubscriptionStatus(null);
-    //   }, 5000);
-    //  }
-   // }
-        
-   return (
-    <>
-      <div className='FooterContainer'>
-        <div className='FooterWrap'>
-          <div className='Newsletter'>
-            <div className='NewsletterTitle'>Subscribe to Our Weekly Newsletter.</div>
-            <div className='NewsletterBody'>Get Exclusive Health Content Curated by Industry Experts.</div>
-          {/* {subscriptionStatus === true && <Alert variant="success">Welcome to the PAX Community!</Alert>}
-              {subscriptionStatus === false && <Alert variant="danger">Subscription Failed. Please try again.</Alert>}   */}   
-              <div className='Form'>
-                <div><label>Email Address</label></div>
-                <div><input
-                  type='email'
-                  id='email'
-                  //value={email}
-                  placeholder='Insert Email' 
-                  //onChange={(e) => setEmail(e.target.value)} required
-                /></div>
-                <button type='submit'>Subscribe</button>
-              </div>
-          </div>
+            const docRef = await addDoc(collection(db, 'newsletters'), newsletterData);
+            
+            setEmail('');
+            
+            setSubscriptionStatus(true);
+            setTimeout(() => {
+                setSubscriptionStatus(null);
+            }, 5000);
+        } catch (error) {
+            setSubscriptionStatus(false);
+            
+            setTimeout(() => {
+                setSubscriptionStatus(null);
+            }, 5000);
+        }
+    }
+       */ 
+    return (
+      <div className='footerContainer'>
+        <div className='footerWrap'>
+          <div className='newsletter'>
+            <div className='newsletterTitle'>Subscribe to Our Weekly Newsletter.</div>
+              <div className='newsletterBody't>Get Exclusive Content Curated by Health Experts.</div>
+                <div className='newsletterForm'>
+                  <label>Email Address</label>
+                  <input
+                    type='email'
+                    id='subscriber-email'
+                    name='subscriber-email'
+                    //value={email}
+                    //onChange={(e) => setEmail(e.target.value)}
+                    placeholder='asterawoke@gmail.com'
+                    autoComplete='on'
+                    required
+                  />
+                  <button type='submit'>Subscribe</button>
+                </div>
+             </div>
 
-          <div className='FooterLinkContainer'>
-            <div className='FooterLinks'>
-              <LinkRouter to='/about'>Placeholder</LinkRouter>
-              <LinkRouter to='/about'>Placeholder</LinkRouter>
-              <LinkRouter to='/about'>Placeholder</LinkRouter>
-              <LinkRouter to='/about'>Placeholder</LinkRouter>
-              <LinkRouter to='/about'>Placeholder</LinkRouter>
-              <LinkRouter to='/about'>Placeholder</LinkRouter>
-            </div>
+             <div className='footerLinkContainer'>
+               <div className='footerLinkWrapper'>
+                 <div className='footerLinks'>
+                   <div className='footerLinkName'>ABOUT</div>
+                     <div className='footerLink' to='/about'>GlucoWise</div>
+                     <div className='footerLink' to='/about'>How It Works</div>
+                     <div className='footerLink' to='/about'>Cost & Coverage</div>
+                     <div className='footerLink' to='/services'>Placeholder</div>
+                   </div>
                 
-            <div className='FooterLinks'>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-            </div>
+                 <div className='footerLinks'>
+                   <div className='footerLinkName'>SERVICES</div>
+                     <div className='footerLink'>Placeholder</div>
+                     <div className='footerLink'>Placeholder</div>
+                     <div className='footerLink'>Placeholder</div>
+                     <div className='footerLink'>Placeholder</div>
+                 </div>
+               </div>
 
-            <div className='FooterLinks'>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-            </div>
+               <div className='footerLinkWrapper'>
+                 <div className='footerLinks'>
+                   <div className='footerLinkName'>SUPPORT</div>
+                     <div className='footerLink' to='https://www.facebook.com/' target='_blank'><FaFacebook /> Facebook</div>
+                     <div className='footerLink' to='https://www.linkedin.com/' target='_blank'><FaLinkedin /> LinkedIn</div>
+                     <div className='footerLink' to='https://www.twitter.com/' target='_blank'><FaTwitter /> Twitter</div>
+                     <div className='footerLink' to='https://www.instagram.com/' target='_blank'><FaInstagram /> Instagram</div>
+                 </div>
 
-            <div className='FooterLinks'>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
-              <LinkRouter to='/services'>Placeholder</LinkRouter>
+                 <div className='footerLinks'>
+                   <div className='footerLinkName'>RESOURCE</div>
+                   <div className='footerLink' to='/services'>Placeholder</div>
+                   <div className='footerLink' to='/services'>Placeholder</div>
+                 </div>
+               </div>
+             </div>
+
+             <div className='footerCopyright' to='https://github.com/Speck249/'>PAX &copy; {new Date().getFullYear()} All Rights Reserved</div>
+               </div>
             </div>
-          </div>
-        </div>
-          
-        <div className='FooterCopyright'>
-          <LinkRouter to='https://github.com/Speck249/'>PAX &copy; {new Date().getFullYear()} All Rights Reserved</LinkRouter>
-        </div>
-      </div>
-    </>
   );
 };
 
