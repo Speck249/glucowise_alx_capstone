@@ -1,41 +1,25 @@
 import React from 'react';
 import { Link as LinkRouter } from 'react-router-dom';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import avatar from '../../Images/Person01.jpg';
-import './Dashboard.css';
+import { Link as LinkScroll } from 'react-scroll';
+import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 
 
 const Dashboard = () => {
   return (
-    <>
-      <nav className='tabContainer'>
-        <Stack direction="row" spacing={2}>
-          <Avatar alt="Remy Sharp" src={avatar}/>
-        </Stack>
-
-        <hr />
-          
-        <nav className='tabMenu'>
-          <div className='tabItems'>
-            <LinkRouter to='/track'>Track</LinkRouter>
-          </div>
-
-          <div className='tabItems'>  
-            <LinkRouter to='/readings'>Readings</LinkRouter>
-          </div>
-          
-          <div className='tabItems'>
-            <LinkRouter to='/my_account'>My Account</LinkRouter>
-          </div>
-           
-          <div className='tabButton'>
-            <LinkRouter to='/hero'>Logout</LinkRouter>
-          </div>
-        </nav>
-      </nav>
-    </>
-  );
-};
+      <div id='sidebar' style={({ height: '100vh' }, { display: 'flex' })}>
+        <Sidebar style={({ height: '100vh' }, { backgroundColor: '#004d24' })}>
+          <Menu>
+            <MenuItem> <LinkRouter to='/'> Home </LinkRouter></MenuItem>
+            <MenuItem> <LinkScroll to='About'> About GlucoWise </LinkScroll></MenuItem>
+            <MenuItem> <LinkScroll to='Usage'> How It Works </LinkScroll></MenuItem>
+            <MenuItem> <LinkScroll to='Insurance'> Cost & Coverage </LinkScroll></MenuItem>
+            <MenuItem> <LinkRouter to='/dashboard'> Dashboard </LinkRouter></MenuItem>
+            <MenuItem> <LinkRouter to='/support'> Support </LinkRouter></MenuItem>
+            <MenuItem> <LinkRouter to='/resource'> Resource </LinkRouter></MenuItem>
+          </Menu>
+        </Sidebar>
+      </div>
+  ); 
+}
 
 export default Dashboard;
