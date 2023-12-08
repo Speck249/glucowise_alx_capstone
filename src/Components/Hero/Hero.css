@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: #004d24;;
 }
 
 .cardContent {
@@ -25,7 +26,7 @@
     width: 230px;
     height: 250px;
     padding: 2rem;
-    margin: 1rem;
+    margin: 2rem 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     background-color: black;
@@ -53,4 +54,73 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+}
+
+.aboutContainer,
+.insuranceContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.insuranceContainer {
+    margin-bottom: 2rem;
+}
+
+.siteFeature #About h2,
+.siteFeature #Usage h2,
+.siteFeature #Insurance h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.siteFeature #About .imgWrap,
+.siteFeature #Insurance .imgWrap {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.siteFeature #About .textWrap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.siteFeature #Insurance .textWrap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.siteFeature #Insurance .textWrap {
+    margin-bottom: 2rem;
+}
+
+.siteFeature #About h3,
+.siteFeature #Insurance h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.siteFeature #About p,
+.siteFeature #Usage p,
+.siteFeature #Insurance p {
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 1.8;
 }
