@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Sora', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Sora', sans-serif;
 }
 
 .carouselContainer {
@@ -20,93 +20,80 @@
 }
 
 .cardContent {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #fff;
-    width: 230px;
-    height: 250px;
-    padding: 2rem;
-    margin: 2rem 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 1rem;
-    background-color: black;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+  width: 250px;
+  height: 260px;
+  padding: 2rem;
+  margin: 2rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-color: black;
 }
 
 .Icon {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin: 1rem 0; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 1rem 0; 
 }
 
 .Title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
 }
 
 .Description {
-    font-size: 13px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .aboutContainer,
 .insuranceContainer {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
 }
 
 .insuranceContainer {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .siteFeature #About h2,
 .siteFeature #Usage h2,
 .siteFeature #Insurance h2 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   text-align: center;
   font-weight: bold;
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
-.siteFeature #About .imgWrap,
+.siteFeature #About .imgWrap, 
 .siteFeature #Insurance .imgWrap {
   display: flex;
+  align-items: center;
   flex: 1;
-  justify-content: center;
-  margin-left: 2rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-.siteFeature #About .textWrap {
+.siteFeature #About .textWrap,
+.siteFeature #Insurance .textWrap {
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: center;
-    text-decoration: none;
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.siteFeature #Insurance .textWrap {
-    display: flex;
     flex: 1;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-decoration: none;
     margin: 1rem;
     padding: 1rem;
-}
-
-
-.siteFeature #Insurance .textWrap {
-    margin-bottom: 2rem;
 }
 
 .siteFeature #About h3,
