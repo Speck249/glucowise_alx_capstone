@@ -1,12 +1,12 @@
 import React from 'react';
+import Navigation from '../Components/Navigation/Navigation';
 import Support from '../Components/Support/Support';
-import Navbar from '../Components/Navbar/Navbar';
 
 
 const SupportPage = () => {
   return (
     <>
-      <Navbar />
+      <Navigation />
       <Support />
     </>
   );
