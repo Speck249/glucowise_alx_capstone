@@ -1,81 +1,131 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Sora', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
 }
 
-.compContainer {
+.componentContainer {
   display: flex;
-  background-color: red;
 }
 
-.infoContainer {
-  display: flex;
-  flex: 1;
-  padding: 2em;
-  margin: 1rem;
+.textContainer {
+  /*background-image: url('../../Images/contact.jpg');*/
   background-color: yellow;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 2rem;
+  height: 100vh;
 }
 
-.infoWrap h1 {
-  font-size: 2rem;
+.textContainer h1 {
+  font-size: 2.5rem;
   font-weight: bold;
+  text-align: left;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
-.infoWrap p {
-    font-size: 14px;
-    line-height: 1.6;
+.textContainer .information {
+  padding: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-.contact {
-    display: flex;
-    flex-direction: row;
-    background-color: red;
+.textContainer .information .icon {
+  display: inline;
+  color: red;
 }
 
-.infoWrap .socialMedia {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-    padding-right: 1rem;
+.textContainer .description,
+.textContainer .information span {
+  font-size: 0.9rem;
+  line-height: 2;
+  text-align: justify;
+  padding: 1rem;
 }
 
-.infoWrap .contact p,
-.infoWrap .socialMedia p {
-    font-size: 14px;
-    text-align: justify;
+.textContainer .socialMedia div {
+    display: inline-block;
+    margin-right: 2rem;
 }
 
-.infoWrap .socialMedia .icon {
-    display: flex;
-    flex-direction: row;
+.supportContainer {
+  flex: 1;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
-.formContainer {
+.supportWrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: purple;
+
+  @media screen and (max-width: 480px) {
+     height: 80%;
+  }
+}
+
+.supportContent {
   display: flex;
   justify-content: center;
-  flex: 1;
-  margin: 1rem;
-  background-color: aliceblue;
+  height: 100%;
+  background-color: red;
+
+  @media screen and (max-width: 480px) {
+    padding: 10px;
+  };
 }
 
-.form {
-  width: 65%;
-  padding-top: 2rem;
-  background-color: transparent;
-  border: 2px solid black;
-}
-
-.form label {
-  font-size: 13px;
-}
-
-.form input, textarea {
-  background-color: antiquewhite;
+.supportForm {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 40px 20px;
   border-radius: 4px;
-  margin-bottom: 1rem;
-  padding-left: 10px;
-  width: 400px;
+  max-width: 550px;
+  height: auto;
+  width: 100%;
+  background-color: #000;
+  
+  @media screen and (max-width: 400px) {
+    padding: 32px 32px;
+  };
+}
+
+.supportForm label {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+
+.supportForm input {
+  padding: 10px 1rem;
+  margin-left: 2rem;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 2px;
+  width: 85%;
+}
+
+.supportForm textarea {
+  padding: 10px 1rem;
+  border: none;
+  border-radius: 2px;
+  margin-left: 2rem;
+  margin-bottom: 25px;
+  width: 85%;
+}
+
+.supportForm button {
+   font-size: 1rem; 
+   color: #fff;
+   padding: 0.8rem;
+   margin-left: 2rem;
+   border-radius: 2px;
+   border: none;
+   width: 85%;
+   background-color:  #004d24;
+   cursor: pointer;
 }
