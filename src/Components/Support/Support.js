@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaTwitter, FaFacebook, FaPhone, FaMailBulk, FaLocationArrow } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaFacebook, FaPhone, FaMailBulk, FaLocationArrow, FaQuora, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 import './Support.css';
 
 
@@ -17,15 +17,16 @@ const Support = () => {
           <div className='description'>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
 
-          <div className='socialIcon'>
-            <div><FaLinkedin aria-label="Phone" size={20} /></div>
-            <div><FaTwitter aria-label='Email' size={20} /></div>
-            <div><FaFacebook aria-label='Address' size={20} /></div>
+          <div className='socialMedia'>
+            <div className='sm-icon'><FaLinkedin aria-label='LinkedIn' size={25} /></div>
+            <div className='sm-icon'><FaTwitter aria-label='Twitter' size={25} /></div>
+            <div className='sm-icon'><FaFacebook aria-label='Facebook' size={25} /></div>
+            <div className='sm-icon'><FaQuora aria-label='Quora' size={25} /></div>
+            <div className='sm-icon'><FaYoutube aria-label='YouTube' size={25} /></div>
+            <div className='sm-icon'><FaWhatsapp aria-label='Whatsapp' size={25} /></div>
           </div>
         </div>
 
@@ -41,6 +42,7 @@ const Support = () => {
                 //onChange={(e) => setFullName(e.target.value)}
                   autoComplete='on'
                   autoFocus
+                  placeholder='Aster Awoke'
                   required 
                 />
                 
@@ -51,6 +53,7 @@ const Support = () => {
                 //value={email}
                 //onChange={(e) => setEmail(e.target.value)}
                   autoComplete='on'
+                  placeholder='asterawoke@gmail.com'
                   required
                 />
 
@@ -60,6 +63,7 @@ const Support = () => {
                   id="subject"
                 //value={subject}
                 //onChange={(e) => setSubject(e.target.value)} 
+                  placeholder='Eg. Insurance'
                 />
                 
                 <label>Message</label>
@@ -67,6 +71,7 @@ const Support = () => {
                   rows={3}
                 //value={message}
                 //onChange={(e) => setMessage(e.target.value)}
+                  placeholder='Place your message here'
                   required
                 />
                 
