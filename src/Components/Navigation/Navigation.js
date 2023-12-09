@@ -84,7 +84,7 @@ const Navigation = () => {
           </div>
 
           <div className='navItem'>
-            <LinkScroll to='/support'> Support </LinkScroll>
+            <LinkRouter to='/support'> Support </LinkRouter>
           </div>
 
           <div className='navItem'>
