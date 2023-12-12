@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import googleIcon from '../../Images/google_icon.png';
+import Google from '../../Images/googleIcon.png';
 import './Login.css';
 
 
@@ -13,7 +13,7 @@ const LogIn = () => {
             <h1>WELCOME</h1>
             <button className='logingoogleContainer'><span className='loginimgContainer'>
               <img 
-                src={googleIcon}
+                src={Google}
                 width={25}
                 height={25}
                 alt='Google Icon'/></span> 
