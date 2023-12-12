@@ -57,14 +57,10 @@
     padding: 1rem;
 }
 
-/* .socialMedia .sm-icon {
-    margin-top: 2rem;
-} */
-
 .supportContainer {
   flex: 2;
   margin: 0 auto;
-  background-image: url('../../Images/contact.jpg');
+  background-image: url('../../Images/Placeholder.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
