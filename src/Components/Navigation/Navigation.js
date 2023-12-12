@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
-import Scrollspy from 'react-scrollspy'
+import Scrollspy from 'react-scrollspy';
 import { FaBars } from 'react-icons/fa';
 import GlucoWise from '../../Images/Logo.png';
 import './Navigation.css';
@@ -88,7 +88,7 @@ const Navigation = () => {
           </div>
 
           <div className='navItem'>
-            <LinkScroll to='/blog'> Resource </LinkScroll>
+            <LinkRouter to='/resource'> Resource </LinkRouter>
           </div>
         </div>
       
