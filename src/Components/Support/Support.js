@@ -3,6 +3,7 @@ import { FaLinkedin, FaTwitter, FaFacebook, FaPhone, FaMailBulk, FaLocationArrow
 import './Support.css';
 
 
+
 const Support = () => {
     return (
       <div className='componentContainer'>
@@ -75,7 +76,7 @@ const Support = () => {
                   required
                 />
                 
-                <button type="submit">Submit</button>
+                <button type='submit'>Submit</button>
               </div>
             </div>
         </div>
