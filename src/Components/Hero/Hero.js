@@ -28,32 +28,32 @@ const Hero = () => {
       <div className='infoContainer'>
         <div className='cardContent'>
           <div className='Icon'><FaChartBar size={30} /></div>
-          <div className='Title'>CGS</div>
-          <div className='Description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-        </div>
-
-        <div className='cardContent'>
-          <div className='Icon'><FaMobile size={30}/><FaLaptop size={30}/></div>
-          <div className='Title'>Dark Mode</div>
-          <div className='Description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          <div className='Title'>GlucoWise CGM</div>
+          <div className='Description'>Experience real-time data by seamlessly connecting to GlucoWise Continuous Monitor</div>
         </div>
 
         <div className='cardContent'>
           <div className='Icon'><FaChrome size={30} /> </div>
           <div className='Title'>Chrome Extension</div>
-          <div className='Description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          <div className='Description'>Immerse yourself in vibrant content with the newly released Chrome extension.</div>
         </div>
 
         <div className='cardContent'>
           <div className='Icon'><FaAndroid size={30} /></div>
           <div className='Title'>Android</div>
-          <div className='Description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          <div className='Description'>Carry GlucoWise in your pocket with the Android application available on PlayStore.</div>
         </div>
 
         <div className='cardContent'>
           <div className='Icon'><FaApple size={30} /></div>
           <div className='Title'>iOS</div>
-          <div className='Description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          <div className='Description'>Ready to experience GlucoWise on your latest iPhone? Download today from the AppStore.</div>
+        </div>
+
+        <div className='cardContent'>
+          <div className='Icon'><FaMobile size={30}/><FaLaptop size={30}/></div>
+          <div className='Title'>Dark Mode</div>
+          <div className='Description'>Embrace a New Dimension of Style and Comfort with Dark Mode on your Mobile App</div>
         </div>
       </div>
         
