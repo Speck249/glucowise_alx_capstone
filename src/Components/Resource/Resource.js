@@ -21,7 +21,7 @@ const Resource = () => {
       <section id='Mindset'>
         <div className='blogHeader'
           style={{
-            backgroundColor: 'pink',
+            backgroundColor: '#602E17',
             display: 'flex', 
             padding: '2rem',
             marginBottom: '2rem',
@@ -29,11 +29,11 @@ const Resource = () => {
             borderRadius: '2rem'
           }}>
          
-          <h2 style={{ fontSize: '3rem', color: '#fff', textAlign: 'center' }}> Mindset ipsum dolor sit amet</h2>
+          <h2 style={{ fontSize: '3rem', color: 'bisque', textAlign: 'center' }}> Mindset ipsum dolor sit amet</h2>
           <p style={{
             fontSize: '0.9rem',
             fontStyle: 'italic',
-            color: '#fff', 
+            color: 'bisque', 
             textAlign: 'center',
             lineHeight: 1.5,
             width: '55%',
@@ -53,12 +53,12 @@ const Resource = () => {
           <Row gutter={20}>
             {mindsetPosts.map((post) => (
               <Col span={8} key={post.id}>
-                <Card style={{ backgroundColor: 'pink', border: 'none', marginBottom: '1rem' }}
+                <Card style={{ background: 'burlywood', color: '#fff', border: 'none', marginBottom: '1rem' }}
                   hoverable
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
 
                   <Meta title={post.title} description={post.description} />
-                  <LinkRouter to='/newpage'><Button style={{backgroundColor: 'purple', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
+                  <LinkRouter to='/newpage'><Button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
                 </Card>
               </Col>
             ))}
@@ -80,7 +80,7 @@ const Resource = () => {
             <p style={{
               fontSize: '0.9rem',
               fontStyle: 'italic',
-              color: '#fff', 
+              color: '#602E17', 
               textAlign: 'center',
               lineHeight: 2,
               marginTop: '2rem' 
@@ -90,7 +90,7 @@ const Resource = () => {
           </div>
 
           <div className='blogText' style={{ flex: 1, marginTop: '3rem', width: '50%' }}>
-            <h2 style={{ fontSize: '4rem', color: '#fff', textAlign: 'center' }}> Mindset ipsum dolor sit amet</h2>  
+            <h2 style={{ fontSize: '4rem', color: '#602E17', textAlign: 'center' }}> Mindset ipsum dolor sit amet</h2>  
           </div>
         </div>
 
@@ -104,12 +104,12 @@ const Resource = () => {
           <Row gutter={20}>
             {dietPosts.map((post) => (
               <Col span={6} key={post.id}>
-                <Card style={{ backgroundColor: 'transparent', border: '1px solid pink', marginBottom: '1rem' }}
+                <Card style={{ backgroundColor: 'transparent', border: '1px solid #602E17', marginBottom: '1rem' }}
                   hoverable
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
   
-                  <Meta title={post.title} description={post.description} style={ {color: 'white'} }/>
-                  <LinkRouter to='/newpage'><Button style={{backgroundColor: 'purple', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
+                  <Meta title={<span style={{ color: 'bisque' }}>{post.title}</span>}description={<span style={{ color: 'bisque' }}>{post.description}</span>}/>
+                  <LinkRouter to='/newpage'><Button style={{backgroundColor: '#602E17', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
                 </Card>
               </Col>
             ))}
@@ -123,7 +123,7 @@ const Resource = () => {
       <section id='Lifestyle'>
         <div className='blogHeader'
           style={{
-            backgroundColor: 'pink',
+            backgroundColor: 'burlywood',
             display: 'flex', 
             padding: '2rem',
             marginTop: '1rem',
@@ -131,11 +131,11 @@ const Resource = () => {
             borderRadius: '2rem'
           }}>
         
-          <h2 style={{ fontSize: '3rem', color: '#fff', textAlign: 'center' }}> Lifestyle ipsum dolor sit amet</h2>
+          <h2 style={{ fontSize: '3rem', color: '#602E17', textAlign: 'center' }}> Lifestyle ipsum dolor sit amet</h2>
           <p style={{
             fontSize: '0.9rem',
             fontStyle: 'italic',
-            color: '#fff', 
+            color: '#602E17', 
             textAlign: 'center',
             lineHeight: 1.6,
             width: '55%',
@@ -149,12 +149,12 @@ const Resource = () => {
           <Row gutter={20}>
             {lifestylePosts.map((post) => (
               <Col span={6} key={post.id}>
-                <Card style={{ backgroundColor: 'pink', border: 'none', marginBottom: '1rem' }}
+                <Card style={{ backgroundColor: '#602E17', border: 'none', marginBottom: '1rem' }}
                   hoverable
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
 
                   <Meta title={post.title} description={post.description} />
-                  <LinkRouter to='/newpage'><Button style={{backgroundColor: 'purple', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
+                  <LinkRouter to='/newpage'><Button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
                 </Card>
               </Col>
             ))}
@@ -162,9 +162,9 @@ const Resource = () => {
         </div>
       </section>
 
-      <a href='#' style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', marginTop: '3rem', marginBottom: '2rem' }}><FaArrowUp size={30}/> </a>
+      <a href='#' style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', marginTop: '3rem', marginBottom: '2rem' }}><FaArrowUp size={30} style={{ color: 'bisque' }}/> </a>
 
-      <div className='socialMedia' style={{color: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}>
+      <div className='socialMedia' style={{color: 'bisque', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}>
         Follow us at 
         <div className='sm-icon'><FaLinkedin aria-label='LinkedIn' size={25} /></div>
         <div className='sm-icon'><FaTwitter aria-label='Twitter' size={25} /></div>
