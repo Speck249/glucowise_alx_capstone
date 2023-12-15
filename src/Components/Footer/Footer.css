@@ -6,7 +6,8 @@
 }
 
 .footerContainer {
-  background-color: #004d24;;
+  background-color: #000;
+  color: bisque;
 }
 
 .footerWrap {
@@ -23,6 +24,7 @@
 }
 
 .newsletterTitle {
+  color: #deb887;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
@@ -68,7 +70,8 @@
    margin-left: 14px;
    border-radius: 2px;
    border: none;
-   background-color: bisque;
+   background-color: #006400;
+   color: #deb887;
    cursor: pointer;
 }
 
@@ -94,7 +97,7 @@
 
 .footerLinkName {
   font-size: 1rem;
-  font-weight: bold;
+  color: #deb887;
   margin-bottom: 10px;
 }
 
