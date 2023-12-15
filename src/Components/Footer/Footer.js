@@ -59,12 +59,10 @@ const Footer = () => {
                      <div className='footerLink' to='/about'>GlucoWise</div>
                      <div className='footerLink' to='/about'>How It Works</div>
                      <div className='footerLink' to='/about'>Cost & Coverage</div>
-                     <div className='footerLink' to='/services'>Placeholder</div>
                    </div>
                 
                  <div className='footerLinks'>
-                   <div className='footerLinkName'>SERVICES</div>
-                     <div className='footerLink'>Placeholder</div>
+                   <div className='footerLinkName'>PLACEHOLDER</div>
                      <div className='footerLink'>Placeholder</div>
                      <div className='footerLink'>Placeholder</div>
                      <div className='footerLink'>Placeholder</div>
@@ -74,16 +72,16 @@ const Footer = () => {
                <div className='footerLinkWrapper'>
                  <div className='footerLinks'>
                    <div className='footerLinkName'>SUPPORT</div>
-                     <div className='footerLink' to='https://www.facebook.com/' target='_blank'><FaFacebook /> Facebook</div>
-                     <div className='footerLink' to='https://www.linkedin.com/' target='_blank'><FaLinkedin /> LinkedIn</div>
-                     <div className='footerLink' to='https://www.twitter.com/' target='_blank'><FaTwitter /> Twitter</div>
-                     <div className='footerLink' to='https://www.instagram.com/' target='_blank'><FaInstagram /> Instagram</div>
+                     <div className='footerLink' to='https://www.facebook.com/' target='_blank'><FaFacebook style={{ marginRight: '0.3rem'}} /> Facebook</div>
+                     <div className='footerLink' to='https://www.linkedin.com/' target='_blank'><FaLinkedin style={{ marginRight: '0.3rem'}} /> LinkedIn</div>
+                     <div className='footerLink' to='https://www.twitter.com/' target='_blank'><FaTwitter style={{ marginRight: '0.3rem'}} /> Twitter</div>
                  </div>
 
                  <div className='footerLinks'>
                    <div className='footerLinkName'>RESOURCE</div>
-                   <div className='footerLink' to='/services'>Placeholder</div>
-                   <div className='footerLink' to='/services'>Placeholder</div>
+                   <div className='footerLink' to='/services'>Health Articles</div>
+                   <div className='footerLink' to='/services'>Accessibility</div>
+                   <div className='footerLink' to='/services'>Terms & Conditions</div>
                  </div>
                </div>
              </div>
