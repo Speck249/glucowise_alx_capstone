@@ -10,14 +10,14 @@ const Support = () => {
         <div className='textContainer'>
           <h1>GET IN TOUCH</h1>
           <div className='information'>
-            <div className='icon'><FaPhone aria-label="Phone" size={20} /></div><span>(251) 943 678 345</span><br/>
-            <div className='icon'><FaMailBulk aria-label='Email' size={20} /></div><span>support@glucowise.com</span><br/>
-            <div className='icon'><FaLocationArrow aria-label='Address' size={20} /></div><span>Addis Ababa, Ethiopia</span><br/>
+            <div className='icon'><FaPhone aria-label="Phone" size={14} /></div><span>(251) 943 678 345</span><br/>
+            <div className='icon'><FaMailBulk aria-label='Email' size={14} /></div><span>support@glucowise.com</span><br/>
+            <div className='icon'><FaLocationArrow aria-label='Address' size={14} /></div><span>Addis Ababa, Ethiopia</span><br/>
           </div>
 
           <div className='description'>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            magna aliqua. <br/> <br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
 
