@@ -9,7 +9,8 @@ import './Navigation.css';
 
 const Navigation = () => {
   const [top, setTop] = useState('');
-  // Comment the following JavaScript.
+  
+  // Enable navigation to follow page scroll.
   const stickyNavigation = ('scroll', () => {
     if (window !== undefined) {
       let windowLength = window.scrollY;
@@ -22,6 +23,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', stickyNavigation);
     }, [stickyNavigation]); 
 
+    
   return (
     <Scrollspy
       items={ ['About', 'Usage', 'Insurance'] }
@@ -34,15 +36,15 @@ const Navigation = () => {
           <LinkRouter to='/'>
             <img
               src={GlucoWise}
-              width={58}
-              height={54}
+              width={76}
+              height={68}
               alt='GlucoWise Logo'
             />
           </LinkRouter>
         </div>
 
         <div className='sidebarContainer'>
-          <FaBars aria-label='Bar Icon' />
+          <FaBars aria-label='Bar Icon' size={30}/>
         </div>
 
         <div className='navMenu'>
@@ -80,7 +82,7 @@ const Navigation = () => {
           </div>
 
           <div className='navItem'>
-            <LinkScroll to='/dashboard'> Dashboard </LinkScroll>
+            <LinkRouter to='/dashboard'> Dashboard </LinkRouter>
           </div>
 
           <div className='navItem'>
