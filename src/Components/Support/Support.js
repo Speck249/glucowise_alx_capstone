@@ -1,16 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../../firebase';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 import { FaLinkedin, FaTwitter, FaFacebook, FaPhone, FaMailBulk, FaLocationArrow, FaQuora, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 import './Support.css';
 
 
-
 const Support = () => {
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [supportStatus, setSupportStatus] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const supportData = {
+        fullName,
+        email,
+        subject,
+        message,
+      };
+
+      const docRef = await addDoc(collection(db, 'support'), supportData);
+      setFullName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+
+      setSupportStatus(true);
+      setTimeout(() => {
+        setSupportStatus(null);
+      }, 5000);
+    } catch (error) {
+      setSupportStatus(false);
+
+      setTimeout(() => {
+        setSupportStatus(null);
+    }, 5000);
+  }
+};
+
     return (
       <div className='componentContainer'>
         <div className='textContainer'>
           <h1>GET IN TOUCH</h1>
           <div className='information'>
-            <div className='icon'><FaPhone aria-label="Phone" size={14} /></div><span>(251) 943 678 345</span><br/>
+            <div className='icon'><FaPhone aria-label='Phone' size={14} /></div><span>(251) 943 678 345</span><br/>
             <div className='icon'><FaMailBulk aria-label='Email' size={14} /></div><span>support@glucowise.com</span><br/>
             <div className='icon'><FaLocationArrow aria-label='Address' size={14} /></div><span>Addis Ababa, Ethiopia</span><br/>
           </div>
@@ -34,13 +72,17 @@ const Support = () => {
         <div className='supportContainer'>
           <div className='supportWrap'>
             <div className='supportContent'>
-              <div className='supportForm'>
-                <label>Full Name</label>
+              <form onSubmit={handleSubmit}>
+                <Stack spacing={1}>
+                  {supportStatus === false && <Alert severity='error'>Submission Failed. Please try again.</Alert>}
+                  {supportStatus === true && <Alert severity='success'>We'll get back to you shortly!</Alert>}
+                </Stack>
+                <label style={{marginTop: '0.5rem'}}>Full Name</label>
                 <input
                   type="text"
                   id="fullName"
-                //value={fullName}
-                //onChange={(e) => setFullName(e.target.value)}
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
                   autoComplete='on'
                   autoFocus
                   placeholder='Aster Awoke'
@@ -51,8 +93,8 @@ const Support = () => {
                 <input
                   type="email"
                   id="email"
-                //value={email}
-                //onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   autoComplete='on'
                   placeholder='asterawoke@gmail.com'
                   required
@@ -62,26 +104,26 @@ const Support = () => {
                 <input
                   type="text"
                   id="subject"
-                //value={subject}
-                //onChange={(e) => setSubject(e.target.value)} 
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)} 
                   placeholder='Eg. Insurance'
                 />
                 
                 <label>Message</label>
                 <textarea
                   rows={3}
-                //value={message}
-                //onChange={(e) => setMessage(e.target.value)}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   placeholder='Place your message here'
                   required
                 />
                 
                 <button type='submit'>Submit</button>
-              </div>
+              </form>
             </div>
+          </div>
         </div>
     </div>
-  </div>
   );
 };
 
