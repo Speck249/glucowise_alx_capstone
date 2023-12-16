@@ -41,8 +41,6 @@
 .newsletterForm {
   display: flex;
   align-items: center;
-  margin-top: 1.3rem;
-  margin-bottom: 2rem;
 }
 
 .newsletterForm label {
@@ -52,11 +50,11 @@
 .newsletterForm input {
    text-align: left;
    font-size: 1rem;
-   padding: 0.7rem 1.7rem;
+   margin: 0 auto;
+   padding: 0.7rem 1.5rem;
    border-radius: 2px;
    border: none;
    outline: none;
-   width: 100%;
 
    &::placeholder {
     font-size: 0.9rem;
@@ -66,8 +64,9 @@
 .newsletterForm button {
    font-size: 1rem;
    font-weight: bold;
-   padding: 0.7rem 1.2rem;
-   margin-left: 14px;
+   padding: 0.7rem 1rem;
+   margin: 0 auto;
+   margin-top: 1rem;
    border-radius: 2px;
    border: none;
    background-color: #006400;
