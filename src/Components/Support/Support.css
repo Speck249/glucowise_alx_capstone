@@ -16,6 +16,7 @@
   height: 100vh;
   color: bisque;
   background-color: #000;
+
 }
 
 .textContainer h1 {
@@ -85,7 +86,7 @@
   };
 }
 
-.supportForm {
+form {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -102,14 +103,14 @@
   };
 }
 
-.supportForm label {
+label {
   font-size: 13px;
   color: #fff;
   margin-bottom: 0.5rem;
   margin-left: 2rem;
 }
 
-.supportForm input {
+input {
   padding: 10px 1rem;
   margin-left: 2rem;
   margin-bottom: 20px;
@@ -118,7 +119,7 @@
   width: 85%;
 }
 
-.supportForm textarea {
+textarea {
   padding: 10px 1rem;
   border: none;
   border-radius: 2px;
@@ -127,7 +128,7 @@
   width: 85%;
 }
 
-.supportForm button {
+button {
    font-size: 1rem; 
    color: bisque;
    padding: 0.8rem;
