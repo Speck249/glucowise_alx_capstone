@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
+import { useUserAuth } from '../../Context/userAuthContext';
 import Scrollspy from 'react-scrollspy';
 import { FaBars } from 'react-icons/fa';
 import GlucoWise from '../../Images/Logo.png';
@@ -10,7 +11,7 @@ import './Navigation.css';
 const Navigation = () => {
   const [top, setTop] = useState('');
   
-  // Enable navigation to follow page scroll.
+// Create function that manages navigation bar page scroll.
   const stickyNavigation = ('scroll', () => {
     if (window !== undefined) {
       let windowLength = window.scrollY;
@@ -23,7 +24,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', stickyNavigation);
     }, [stickyNavigation]); 
 
-    
+  // Return component output to Home page.
   return (
     <Scrollspy
       items={ ['About', 'Usage', 'Insurance'] }
@@ -33,7 +34,7 @@ const Navigation = () => {
 
       <nav className={`navContainer ${top}`}>
         <div className='navLogo'>
-          <LinkRouter to='/'>
+          <LinkRouter to='/hero'>
             <img
               src={GlucoWise}
               width={76}
@@ -82,20 +83,25 @@ const Navigation = () => {
           </div>
 
           <div className='navItem'>
-            <LinkRouter to='/dashboard'> Dashboard </LinkRouter>
+            <LinkRouter style={{
+              textDecoration: 'none',
+              color: '#ffe4c4'
+            }} to='/support'> Support </LinkRouter>
           </div>
 
           <div className='navItem'>
-            <LinkRouter to='/support'> Support </LinkRouter>
-          </div>
-
-          <div className='navItem'>
-            <LinkRouter to='/resource'> Resource </LinkRouter>
+            <LinkRouter  style={{
+              textDecoration: 'none',
+              color: '#ffe4c4'
+            }} to='/resource'> Resource </LinkRouter>
           </div>
         </div>
       
         <div className='navButton'>
-          <LinkRouter to='/login'> Get Started </LinkRouter>
+          <LinkRouter  style={{
+            textDecoration: 'none',
+            color: '#ffe4c4'
+          }} to='/dashboard'> Get Started </LinkRouter>
         </div>
       </nav>
     </Scrollspy>
