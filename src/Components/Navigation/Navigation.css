@@ -59,26 +59,26 @@
   padding: 1rem 1.5rem;
 
   &:hover {
-    border-bottom: bisque 2px solid;
+    border-bottom: #ffe4c4 2px solid;
   }
 }
 
 .navContainer > .active {
-  border-bottom: bisque 2px solid;
+  border-bottom: #ffe4c4 2px solid;
 }
 
 .navButton  {
   font-size: 1rem;
-  color: bisque;
+  color: #ffe4c4;
   display: flex;
   padding: 0.80em;
   margin-right: 4rem;
   outline: none;
-  border: 2px solid bisque;
+  border: 2px solid #ffe4c4;
   border-radius: 2rem;
 
   &:hover {
-    background-color: black;
+    background-color: #000;
     color: bisque;
     border: none;
   }
