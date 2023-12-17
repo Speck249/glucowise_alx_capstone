@@ -7,6 +7,7 @@ import { mindsetPosts, dietPosts, lifestylePosts } from './Data';
 
 const { Meta } = Card;
 const Resource = () => {
+// Return component output to Resource page. 
   return (
     <div className='blogContainer'
       style={{ 
@@ -117,9 +118,7 @@ const Resource = () => {
         </div>
       </section>
       
-
       {/** Lifestyle Blog Posts*/}
-    
       <section id='Lifestyle'>
         <div className='blogHeader'
           style={{
