@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
 }
 
 .signupContainer {
@@ -15,24 +16,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
-.form {
+#signupForm {
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  margin-top: 3em;
-  padding: 1em;
-  border: none;
-  border-radius: 1rem;
-  background-color: bisque;
+  border-radius: 12px;
+  background-color: #ffe4c4;
+  width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.form h1 {
-   font-size: 2rem;
-   font-weight: bold;
-   text-align: center;
-   margin-top: 1rem;
+#signupForm h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .imgContainer {
@@ -41,19 +44,17 @@
 
 .googleContainer {
   font-size: 1rem;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 1em;
-  padding: 0.7em;
-  border: 1px solid black;
   border-radius: 4rem;
-  width: 60%;
+  background-color: #deb887;
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     border: none;
   }
 }
@@ -64,7 +65,7 @@
 }
 
 .divider {
-  border-top: 1px solid black;
+  border-top: 1px solid #000;
 }
 
 .dividerContent {
@@ -72,43 +73,32 @@
   line-height: 21px;
   position: absolute;
   top: -11px;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0 6px;
-  background-color: white;
+  background-color: #deb887;
 }
 
-.nameLabel {
-  font-size: 12px;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 3px;
-  gap: 8.4rem;
-}
-
-.nameInput {
-  display: flex;
-  flex-direction: row;
-  gap: 0.6em;
-}
-
-.form label {
+#signupForm label {
   font-size: 13px;
   text-align: left;
   margin-bottom: 3px;
   margin-left: 0.4em;
+  color: #000;
 }
 
-.form input {
+#signupForm input {
   font-size: 14px;
-  padding: 1em;
-  margin-bottom: 1em;
-  margin-left: 0.3em;
+  padding: 1.2rem 1rem;
+  margin-left: 0.2em;
+  width: 100%;
   border: none;
   border-radius: 4px;
 }
 
-.buttonContainer {
+.buttonContainer button {
   font-size: 1rem;
+  color: #000;
   display: flex;
   justify-content: center;
   padding: 0.6em;
@@ -116,13 +106,13 @@
   margin-top: 1.3em;
   margin-bottom: 1.2em;
   width: 120px;
-  border: solid 1.5px black;
   border-radius: 2em;
+  background-color: #deb887;
   cursor: pointer;
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     border: none;
   }
 }
@@ -131,8 +121,4 @@
   font-size: 12px;
   text-align: center;
   margin-bottom: 2em;
-}
-
-.prompt span {
-    color: blue;
 }
