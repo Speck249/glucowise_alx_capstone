@@ -4,7 +4,7 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { UserAuthContextProvider } from '../Context/userAuthContext.js';
-import HeroPage from '../Pages/hero.js';
+import HomePage from '../Pages/home.js';
 import DashboardPage from '../Pages/dashboard.js';
 import SupportPage from '../Pages/support.js';
 import ResourcePage from '../Pages/resource.js';
@@ -19,19 +19,12 @@ const App = () => {
     <Router>
       <UserAuthContextProvider>
         <Routes>
-          <Route
-            path='/dashboard'
-            element={
-              <ProtectedRoute>
-                <DashboardPage/>
-              </ProtectedRoute>
-            }
-          />
-          <Route path='/' element={<HeroPage />} />
+          <Route path='/' element={<LoginPage />} />
+          <Route path='/home' element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
           <Route path='/support' element={<SupportPage />} />
           <Route path='/resource' element={<ResourcePage />} />
           <Route path='/signup' element={<SignupPage />} />
-          <Route path='/login' element={<LoginPage />} />
+          <Route path='/dashboard'element={<DashboardPage/>} />
         </Routes>
       </UserAuthContextProvider>
     </Router>
