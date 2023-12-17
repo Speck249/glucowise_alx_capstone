@@ -6,30 +6,34 @@ import './Footer.css';
 
 
 const Footer = () => {
-    const [email, setEmail] = useState('');
-    const [SubscriptionStatus, setSubscriptionStatus] = useState('');
+  // Firestore configuration to store subscription emails.
+  const [email, setEmail] = useState('');
+  const [SubscriptionStatus, setSubscriptionStatus] = useState('');
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      try {
-        const newsletterData = {
-          email
-        };
-            
-        const docRef = await addDoc(collection(db, 'newsletter'), newsletterData);  
-        setEmail('');  
-        setSubscriptionStatus(true);
-        setTimeout(() => {
-          setSubscriptionStatus(null);
-        }, 5000);
-      } catch (error) {
-        setSubscriptionStatus(false);  
-        setTimeout(() => {
-          setSubscriptionStatus(null);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    try {
+      const newsletterData = {
+        email
+      };
+          
+    // Firestore configuration to store newsletter subscription data of users.
+    const docRef = await addDoc(collection(db, 'newsletter'), newsletterData);  
+      setEmail('');  
+      setSubscriptionStatus(true);
+      setTimeout(() => {
+      setSubscriptionStatus(null);
+      }, 5000);
+    } catch (error) {
+      setSubscriptionStatus(false);  
+      setTimeout(() => {
+      setSubscriptionStatus(null);
       }, 5000);
     }
   }
       
+  // Return component output to Home page for rendering.
   return (
     <div className='footerContainer'>
       <div className='footerWrap'>
@@ -69,23 +73,24 @@ const Footer = () => {
                     <div className='footerLink'>Research Training</div>
                     <div className='footerLink'>Grant History</div>
                 </div>
-              </div>
+              
 
               <div className='footerLinkWrapper'>
                 <div className='footerLinks'>
-                  <div className='footerLinkName'>SUPPORT</div>
-                    <div className='footerLink' to='https://www.facebook.com/' target='_blank'><FaFacebook style={{ marginRight: '0.3rem'}} /> Facebook</div>
-                    <div className='footerLink' to='https://www.linkedin.com/' target='_blank'><FaLinkedin style={{ marginRight: '0.3rem'}} /> LinkedIn</div>
-                    <div className='footerLink' to='https://www.twitter.com/' target='_blank'><FaTwitter style={{ marginRight: '0.3rem'}} /> Twitter</div>
-                    <div className='footerLink' to='https://www.quora.com/' target='_blank'><FaQuora style={{ marginRight: '0.3rem'}} /> Quora</div>
+                  <div className='footerLinkName' style={{ marginLeft: '0.8rem'}}>SUPPORT</div>
+                    <div className='footerLink' to='https://www.facebook.com/' target='_blank'><FaFacebook style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /> Facebook</div>
+                    <div className='footerLink' to='https://www.linkedin.com/' target='_blank'><FaLinkedin style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /> LinkedIn</div>
+                    <div className='footerLink' to='https://www.twitter.com/' target='_blank'><FaTwitter style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /> Twitter</div>
+                    <div className='footerLink' to='https://www.quora.com/' target='_blank'><FaQuora style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /> Quora</div>
                 </div>
+              </div>
 
                 <div className='footerLinks'>
                   <div className='footerLinkName'>RESOURCE</div>
-                  <div className='footerLink' to='/services'>Health Articles</div>
-                  <div className='footerLink' to='/services'>Copyright</div>
-                  <div className='footerLink' to='/services'>Accessibility</div>
-                  <div className='footerLink' to='/services'>Privacy Policy</div>
+                  <div className='footerLink'>Health Articles</div>
+                  <div className='footerLink'>Copyright</div>
+                  <div className='footerLink'>Accessibility</div>
+                  <div className='footerLink'>Privacy Policy</div>
                 </div>
               </div>
             </div>
