@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
 }
 
 .pageContainer {
- background-image: url(../../Images/Placeholder.jpg);
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
+  background-color: #602E17;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .loginformWrap {
@@ -24,14 +25,15 @@
   margin-top: 4.5em;
   padding: 2em;
   border-radius: 12px;
-  background-color: bisque;
+  background-color: #ffe4c4;
 }
 
 .loginformContent h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
   margin-top: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .loginimgContainer {
@@ -44,15 +46,15 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 1em;
   padding: 0.7em;
-  border: 1px solid black;
   border-radius: 4rem;
+  color: #000;
+  background-color: #deb887;
   width: 70%;
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     border: none;
   }
 }
@@ -63,7 +65,7 @@
 }
 
 .logindivider {
-  border-top: 1px solid black;
+  border-top: 1px solid #000;
 }
 
 .loginContent {
@@ -73,13 +75,14 @@
   top: -11px;
   left: 45%;
   padding: 0 6px;
-  background-color: white;
+  background-color: #deb887;
 }
 
 .loginform label {
+  color: #000;
   font-size: 13px;
   text-align: left;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   margin-left: 0.4em;
 }
 
@@ -93,8 +96,9 @@
   width: 340px;
 }
 
-.loginbtnContainer {
+.loginbtnContainer button {
   font-size: 1rem;
+  color: #000;
   display: flex;
   justify-content: center;
   padding: 0.6em;
@@ -102,13 +106,13 @@
   margin-top: 1.5em;
   margin-bottom: 1em;
   width: 120px;
-  border: solid 1.5px black;
   border-radius: 2em;
+  background-color: #deb887;
   cursor: pointer;
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     border: none;
   }
 }
@@ -117,8 +121,4 @@
   font-size: 12px;
   text-align: center;
   margin-bottom: 1em;
-}
-
-.loginprompt span {
-  color: blue;
 }
