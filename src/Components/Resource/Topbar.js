@@ -27,14 +27,14 @@ const Topbar = () => {
 
             <Navbar.Collapse id='basic-navbar-nav' style={{color: 'bisque', cursor: 'pointer'}}>
               <Nav className='me-auto' style={{ display: 'flex' }}>
-                <LinkScroll style={{marginRight: '1rem'}}
-                  to='/'
+                <LinkRouter style={{ textDecoration: 'none', color: 'bisque', marginRight: '1rem' }}
+                  to='/home'
                   activeClass='active'
                   spy={true}
                   smooth={true}
                   duration={500}
                   offset={-100}
-                > Home </LinkScroll>
+                > Home </LinkRouter>
               
                 <LinkScroll style={{marginRight: '1rem'}}
                   to='Mindset'
