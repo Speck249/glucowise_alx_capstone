@@ -3,41 +3,41 @@ import Placeholder from '../../Images/Placeholder.jpg';
 export const mindsetPosts = [
     {
       id: 'md-1',
-      title: 'Schedule Appointments',
-      description: 'View and Manage Your Upcoming Therapy Sessions.',
+      title: 'Developing a Growth Mindset',
+      description: 'Discover the transforming power of a Growth mindset.',
       image: Placeholder,
     },
 
     {
       id: 'md-2',
-      title: 'Medication Tracker',
-      description: 'Track and Manage Your Prescribed Medications.',
+      title: 'Stress Management',
+      description: 'Explore the transformative effects of a resilient mindset.',
       image: Placeholder,
     },
     
     {
       id: 'md-3',
-      title: 'Mood Journal',
-      description: 'Record and Monitor Your Daily Mood and Emotions.',
+      title: 'The Power of Optimisim',
+      description: 'The power of a positive mindset to unleash a potential.',
       image: Placeholder,
     },
 
     {
       id: 'md-4',
-      title: 'Mood Journal',
-      description: 'Record and Monitor Your Daily Mood and Emotions.',
+      title: 'Secrets of High Achievers',
+      description: 'Learn how to adopt a winning attitude to reach new heights.',
       image: Placeholder,
     },
     {
       id: 'md-5',
-      title: 'Mood Journal',
-      description: 'Record and Monitor Your Daily Mood and Emotions.',
+      title: 'Cultivate Optimism',
+      description: 'Self-belief and resilience for a happier, more fulfilling journey.',
       image: Placeholder,
     },
     {
       id: 'md-5',
-      title: 'Mood Journal',
-      description: 'Record and Monitor Your Daily Mood and Emotions.',
+      title: 'Master your mind, master your life',
+      description: 'Explore changes that can empower you to break remove limitations.',
       image: Placeholder,
     }
   ];
@@ -45,26 +45,26 @@ export const mindsetPosts = [
 export const dietPosts = [
     {
       id: 'dp-1',
-      title: 'Therapist Notes',
-      description: 'Access Notes and Feedback From Your Therapist.',
+      title: 'Discover Paleo Diet',
+      description: 'Discover the keys to a healthy and nourshing diet.',
       image: Placeholder,
     },        
     {
       id: 'dp-2',
-      title: 'Payment Service',
-      description: 'Choose Your Payment Plan and Manage Your Fees all.',
+      title: 'Redefining Healhy Diet',
+      description: 'Delicious recipes, and the science of nutritious choices.',
       image: Placeholder,
     },    
     {
       id: 'dp-3',
-      title: 'Resources Library',
-      description: 'Browse Educational Materials and Helpful Resources.',
+      title: 'Food as Medicine',
+      description: 'Promoting longevity, and enhancing your overall vitality.',
       image: Placeholder,
     },
     {
       id: 'dp-4',
-      title: 'Resources Library',
-      description: 'Browse Educational Materials and Helpful Resources.',
+      title: 'Vitality in a Bowl',
+      description: 'Learn the crucial role of balanced diet in preventing illness.',
       image: Placeholder,
     }
   ];
@@ -73,26 +73,26 @@ export const dietPosts = [
 export const lifestylePosts = [
     {
       id: 'lp-1',
-      title: 'Therapist Notes',
-      description: 'Access Notes and Feedback From Your Therapist.',
+      title: 'The myth of work-life balance',
+      description: 'Design a lifestyle of your greatest aspirations.',
       image: Placeholder,
     },        
     {
       id: 'lp-2',
-      title: 'Payment Service',
-      description: 'Choose Your Payment Plan and Manage Your Fees all.',
+      title: 'Living in the Now',
+      description: 'Cultivate self-care practices, and the of joy moments.',
       image: Placeholder,
     }, 
     {
       id: 'lp-3',
-      title: 'Resources Library',
-      description: 'Browse Educational Materials and Helpful Resources.',
+      title: 'The Power of Meditation',
+      description: 'Embrace a mindful lifestyle for your mind, body, and soul.',
       image: Placeholder,
     },
     {
       id: 'lp-3',
-      title: 'Resources Library',
-      description: 'Browse Educational Materials and Helpful Resources.',
+      title: 'Intentional Living',
+      description: 'Uncover the transformative benefits of mindfulness.',
       image: Placeholder,
     }
   ];
