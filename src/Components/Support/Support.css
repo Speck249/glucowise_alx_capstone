@@ -20,17 +20,17 @@
 }
 
 .textContainer h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   color: #006400;
 }
 
 .textContainer .information {
   padding: 1rem;
   margin-bottom: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .textContainer .information .icon {
@@ -40,7 +40,7 @@
 
 .textContainer .description,
 .textContainer .information span {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   line-height: 2;
   text-align: justify;
   padding: 1rem;
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .socialMedia .sm-icon {
