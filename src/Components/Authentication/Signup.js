@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link as LinkRouter } from 'react-router-dom';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
-import Google from '../../Images/googleIcon.png';
+import Google from '../../Images/GoogleIcon.png';
 import './Signup.css'
 
 
@@ -110,7 +110,7 @@ const Signup = () => {
           />
             
           <div className='buttonContainer'>
-            <button type='submit'>Sign Up</button>
+            <button type='submit' onClick={handleSignup}>Sign Up</button>
           </div>
 
           <div className='prompt'> 
