@@ -46,7 +46,7 @@ const Support = () => {
     return (
       <div className='componentContainer'>
         <div className='textContainer'>
-          <h1>GET IN TOUCH</h1>
+          <h1>Get In Touch With GlucoWise</h1>
           <div className='information'>
             <div className='icon'><FaPhone aria-label='Phone' size={14} /></div><span>(251) 943 678 345</span><br/>
             <div className='icon'><FaMailBulk aria-label='Email' size={14} /></div><span>support@glucowise.com</span><br/>
@@ -54,9 +54,12 @@ const Support = () => {
           </div>
 
           <div className='description'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. <br/> <br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>We value your feedback, inquiries, and concerns. Whether you have questions about our services, need technical support,
+            or want to explore partnership opportunities, our team is here to assist you. Contact us using the information above, and
+            we'll respond promptly.
+            <br /><br />
+            Alternatively, you can fill out the contact form, and one of our representatives will reach out to you shortly. We look
+            forward to hearing from you and being a part of your diabetes management journey.</p>
           </div>
 
           <div className='socialMedia'>
@@ -75,7 +78,7 @@ const Support = () => {
               <form onSubmit={handleSubmit}>
                 <Stack spacing={1}>
                   {supportStatus === false && <Alert severity='error'>Submission Failed. Please try again.</Alert>}
-                  {supportStatus === true && <Alert severity='success'>We'll get back to you shortly!</Alert>}
+                  {supportStatus === true && <Alert severity='success'>Thanks for reaching out! We'll get back to you shortly.</Alert>}
                 </Stack>
                 <label style={{marginTop: '0.5rem'}}>Full Name</label>
                 <input
