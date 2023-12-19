@@ -30,18 +30,18 @@ const Resource = () => {
             borderRadius: '2rem'
           }}>
          
-          <h2 style={{ fontSize: '3rem', color: 'bisque', textAlign: 'center' }}> Mindset ipsum dolor sit amet</h2>
+          <h2 style={{ fontSize: '3rem', color: 'bisque', textAlign: 'center', width: '50%' }}> Unlock the Power of Your Mind & Stay Informed </h2>
           <p style={{
             fontSize: '0.9rem',
             fontStyle: 'italic',
             color: 'bisque', 
             textAlign: 'center',
-            lineHeight: 1.5,
-            width: '55%',
+            lineHeight: 2,
+            width: '50%',
             marginTop: '1rem' 
-          }}> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt."<br/>
-            <cite style={{ display: 'flex', justifyContent: 'flex-end', fontWeight: 'bold', lineHeight: 2, marginRight: '1rem'}}> ~ Mr. Galloway</cite></p>
+          }}> "The greatest revolution of our generation is the discovery that human beings, by changing the inner attitudes 
+           of their minds, can change the outer aspects of their lives."<br/>
+            <cite style={{ display: 'flex', justifyContent: 'flex-end', fontWeight: 'bold', lineHeight: 2, marginRight: '1rem'}}> ~ William James</cite></p>
         </div>
       
         <div className='blogContent'
@@ -85,13 +85,13 @@ const Resource = () => {
               textAlign: 'center',
               lineHeight: 2,
               marginTop: '2rem' 
-            }}> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-             eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt."<br/>
-              <cite style={{ display: 'flex', justifyContent: 'flex-end', fontWeight: 'bold', lineHeight: 2, marginRight: '3rem'}}> ~ Mr. Galloway</cite></p>
+            }}> "A healthy diet is not just about eating less; it's about eating right. It fuels your body with the nutrients it needs,
+            enhances your well-being, and lays the foundation for a vibrant life"<br/>
+              <cite style={{ display: 'flex', justifyContent: 'flex-end', fontWeight: 'bold', lineHeight: 2, marginRight: '3rem'}}> ~ Dr. David Katz</cite></p>
           </div>
 
           <div className='blogText' style={{ flex: 1, marginTop: '3rem', width: '50%' }}>
-            <h2 style={{ fontSize: '4rem', color: '#602E17', textAlign: 'center' }}> Mindset ipsum dolor sit amet</h2>  
+            <h2 style={{ fontSize: '3rem', color: '#602E17', textAlign: 'center', marginTop: '1rem' }}> Nourish Your Body, Transform Your Life </h2>  
           </div>
         </div>
 
@@ -130,7 +130,7 @@ const Resource = () => {
             borderRadius: '2rem'
           }}>
         
-          <h2 style={{ fontSize: '3rem', color: '#602E17', textAlign: 'center' }}> Lifestyle ipsum dolor sit amet</h2>
+          <h2 style={{ fontSize: '3rem', color: '#602E17', textAlign: 'center', width: '50%' }}> Design Your Life, Embrace Your Lifestyle </h2>
           <p style={{
             fontSize: '0.9rem',
             fontStyle: 'italic',
@@ -139,9 +139,9 @@ const Resource = () => {
             lineHeight: 1.6,
             width: '55%',
             marginTop: '1rem' 
-          }}> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-          eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt."<br/>
-            <cite style={{ display: 'flex', justifyContent: 'flex-end', fontWeight: 'bold', lineHeight: 2, marginRight: '1rem'}}> ~ Mr. Galloway</cite></p>
+          }}> "Your lifestyle is the reflection of your choices, habits, and values. Every decision you make molds the journey you embark on,
+           so choose wisely and create a life that inspires and fulfills you."<br/>
+            <cite style={{ display: 'flex', justifyContent: 'flex-end', fontWeight: 'bold', lineHeight: 2, marginRight: '1rem'}}> ~ Dr. Sanjay Gupta</cite></p>
         </div>
       
         <div className='blogContent' style={{ paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '1rem' }}>  
