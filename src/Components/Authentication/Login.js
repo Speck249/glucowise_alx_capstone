@@ -4,7 +4,7 @@ import { useUserAuth } from '../../Context/userAuthContext';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import { Link as LinkRouter } from 'react-router-dom';
-import Google from '../../Images/googleIcon.png';
+import Google from '../../Images/GoogleIcon.png';
 import './Login.css';
 
 
@@ -108,7 +108,7 @@ const LogIn = () => {
             />
 
             <div className='loginbtnContainer'>
-              <button type='submit'>Log In</button>
+              <button type='submit' onClick={handleLogin}>Log In</button>
             </div>
 
             <div className='loginprompt'> 
