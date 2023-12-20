@@ -48,6 +48,7 @@
 .navMenu {
   display: flex;
   flex-direction: row;
+  margin-right: 2rem;
 
   @media screen and (max-width: 996px) {
     display: none;
@@ -67,23 +68,3 @@
   border-bottom: #ffe4c4 2px solid;
 }
 
-.navButton  {
-  font-size: 1rem;
-  color: #ffe4c4;
-  display: flex;
-  padding: 0.80em;
-  margin-right: 4rem;
-  outline: none;
-  border: 2px solid #ffe4c4;
-  border-radius: 2rem;
-
-  &:hover {
-    background-color: #000;
-    color: bisque;
-    border: none;
-  }
-
-  @media screen and (max-width: 996px) {
-      display: none;
-  }
-}
