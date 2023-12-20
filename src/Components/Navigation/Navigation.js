@@ -27,21 +27,21 @@ const Navigation = () => {
   // Return component output to Home page.
   return (
     <Scrollspy
-      items={ ['About', 'Usage', 'Insurance'] }
+      items={ ['About', 'Pricing', 'Insurance'] }
       currentClassName='active'
       offset={-100} 
     >
 
       <nav className={`navContainer ${top}`}>
         <div className='navLogo'>
-          <LinkRouter to='/hero'>
+          <div>
             <img
               src={GlucoWise}
               width={76}
               height={68}
               alt='GlucoWise Logo'
             />
-          </LinkRouter>
+          </div>
         </div>
 
         <div className='sidebarContainer'>
@@ -62,13 +62,13 @@ const Navigation = () => {
 
           <div className='navItem'>
             <LinkScroll
-              to='Usage'
+              to='Pricing'
               activeClass='active'
               spy={true}
               smooth={true}
               duration={500}
               offset={-100}
-            > How It Works </LinkScroll>
+            > Pricing Packages </LinkScroll>
           </div>
         
           <div className='navItem'>
@@ -95,13 +95,6 @@ const Navigation = () => {
               color: '#ffe4c4'
             }} to='/resource'> Resource </LinkRouter>
           </div>
-        </div>
-      
-        <div className='navButton'>
-          <LinkRouter  style={{
-            textDecoration: 'none',
-            color: '#ffe4c4'
-          }} to='/dashboard'> Get Started </LinkRouter>
         </div>
       </nav>
     </Scrollspy>
