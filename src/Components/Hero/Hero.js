@@ -1,35 +1,66 @@
 import React from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
 import Slider from 'react-slick';
+import PricingCard from './PricingCard';
 import { FaAndroid, FaApple, FaChartBar, FaChrome, FaLaptop, FaMobile } from 'react-icons/fa';
-import Carousel1 from '../../Images/Reputable.jpg';
-import Carousel2 from '../../Images/Hassle.jpg';
-import Carousel3 from '../../Images/Patch.jpg';
 import GlucoWise from '../../Images/GlucoWise.jpg';
 import Insurance from '../../Images/Insurance.jpg';
+import testimonialOne from '../../Images/Testimonial1.png';
+import testimonialTwo from '../../Images/Testimonial2.png';
+import testimonialThree from '../../Images/Testimonial3.png';
+import testimonialFour from '../../Images/Testimonial4.png';
+import testimonialFive from '../../Images/Testimonial5.png';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './Hero.css';
 
 
 const Hero = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  }; 
+   const pricingOptions = [
+    {
+      title: 'Basic',
+      price: '$9.99/month',
+      features: [
+        'Continuous Glucose Monitoring',
+        'Carbohydrate Tracking',
+        'Exercise Integration',
+        'Medication Reminders'
+      ]
+    },
+    {
+      title: 'Standard',
+      price: '$19.99/month',
+      features: [
+        'All Basic features',
+        'Trend Analysis',
+        'Personalized Insights',
+        'Hypo/Hyperglycemia Alerts'
+      ]
+    },
+    {
+      title: 'Premium',
+      price: '$29.99/month',
+      features: [
+        'All Standard features',
+        'Data Sharing',
+        'Mealtime Suggestions',
+        'Historical Data Analysis'
+      ]
+    }
+  ];
 
+  
   return (
     <>
-      <div className='carouselContainer'>
-        <Slider {...settings}>
-          <div><img src={Carousel1} alt='Healthcare Workers' width={1520} height={1050} />
-            <div className='overlay'><h3>More than Just a Product, We Are Your Partners in Diabetes Management</h3></div>
+        <div className='heroContainer'>
+          <div className='overlay'>
+            <div className='overlayText' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '20rem', padding: '1rem' }}>
+              <h2 style={{ fontSize: '3rem', width: '45%', textAlign: 'center' }}>Welcome to GlucoWise</h2>
+              <h3 style={{ fontSize: '1rem', fontWeight: 'lighter', textAlign: 'center', padding: '1rem', width: '35%'}}>Smart Solutions for Effortless Glucose Monitoring</h3>
+              <LinkRouter to='/dashboard'><button className='navButton' style={{ width: 'fit-content' }}>Get Started</button></LinkRouter>
+            </div>
           </div>
-          <div><img src={Carousel2} alt='Diabetes Monitor' width={1470} height={1050} /></div>
-          <div><img src={Carousel3} alt='Sensor Patch' width={1473} height={1050} /></div>
-        </Slider>
-      </div>
+        </div>
 
       <div className='infoContainer'>
         <div className='cardContent'>
@@ -83,18 +114,18 @@ const Hero = () => {
           </div>
         </section>
 
-        <section id='Usage'>
-          <h2>How it Works</h2>
-          <div className='textWrap'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-            sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-            tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-          </div>
+        <section id='Pricing' className='pricing-section' style={{  textAlign: 'center', padding: '20px' }}>
+          <h2 style={{ marginBottom: '2rem', fontSize: '2.7rem' }}>Pricing Packages</h2>
+          <div className="pricing-cards" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+          {pricingOptions.map((option, index) => (
+          <PricingCard
+            key={index}
+            title={option.title}
+            price={option.price}
+            features={option.features}
+          />
+         ))}
+         </div>
         </section> 
 
         <section id='Insurance'>
@@ -116,6 +147,22 @@ const Hero = () => {
             </div>
           </div>
         </section>
+
+        <h2 style={{ fontSize: '2.7rem', fontWeight: 'bold', textAlign: 'center', color: '#602E17', backgroundColor: 'burlywood', padding: '2rem'}}>Testimonials</h2>
+        <Slider
+          infinite={true}
+          speed={500}
+          slidesToShow={4}
+          slidesToScroll={1}
+          autoplay={true}
+          autoplaySpeed={3000}
+          className='testimonial-carousel'>
+            <div><img src={testimonialOne} alt='Customer Testimonial' width={350} height={320} /></div>
+            <div><img src={testimonialTwo} alt='Customer Testimonial' width={350} height={320} /></div>
+            <div><img src={testimonialThree} alt='Customer Testimonial' width={350} height={320} /></div>
+            <div><img src={testimonialFour} alt='Customer Testimonial' width={350} height={320} /></div>
+            <div><img src={testimonialFive} alt='Customer Testimonial' width={350} height={320} /></div>
+        </Slider>
       </div>  
     </>
   );
