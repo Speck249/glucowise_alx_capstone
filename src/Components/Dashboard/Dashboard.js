@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link as LinkRouter, useNavigate } from 'react-router-dom';
 import { useUserAuth } from '../../Context/userAuthContext';
 import { Link as LinkScroll } from 'react-scroll';
 import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
-import HomeIcon from '@mui/icons-material/Home';
-import DashboardIcon from '@mui/icons-material/Dashboard';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
-import { FaMobile, FaInfoCircle, FaFire, FaTimes } from 'react-icons/fa';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+import { FaMobile, FaInfoCircle, FaFire, FaArrowAltCircleDown, FaHome } from 'react-icons/fa';
 //import { LineChart } from '@mui/x-charts/LineChart';
 //import { Chart, LineSeries, ArgumentAxis, ValueAxis } from '@devexpress/dx-react-chart-material-ui';
 //import { ArgumentScale, ValueScale } from '@devexpress/dx-react-chart';
@@ -70,6 +70,7 @@ import { FaMobile, FaInfoCircle, FaFire, FaTimes } from 'react-icons/fa';
 }
 
 */
+const MySwal = withReactContent(Swal);
 
 const Dashboard = () => {
   const { logOut, user } = useUserAuth();
@@ -85,6 +86,22 @@ const Dashboard = () => {
       console.log(error);
     }
   };
+
+  const handleConnection = () => {
+    MySwal.fire({
+      title: 'Connect to Sensor Patch?',
+      icon: 'success',
+      showCancelButton: true,
+      confirmButtonText: 'Yes',
+      cancelButtonText: 'No',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        navigate('/dashboard');
+      } else {
+        navigate('/home');
+      }
+    });
+  }
 
   return (
     <>
@@ -103,9 +120,9 @@ const Dashboard = () => {
           }}>
             <MenuItem style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center', marginTop: '3rem' }}> GlucoWise </MenuItem>
               <hr style={{ width: '75%', margin: '0 auto'}}/>
-            <MenuItem style={{ marginTop: '1rem', fontSize: '0.85rem'}}><HomeIcon fontSize='small' /> <LinkScroll to='/dashboard'> Home </LinkScroll> </MenuItem>
-            <MenuItem style={{ fontSize: '0.85rem' }}><FaMobile size={18}/><LinkScroll> Connect to Device </LinkScroll></MenuItem>
-            <MenuItem style={{ fontSize: '0.85rem' }}><DashboardIcon fontSize='small' /> <LinkScroll to='/support'> Patient Dashboard </LinkScroll></MenuItem>
+            <MenuItem style={{ marginTop: '1rem', fontSize: '0.85rem'}}><FaHome size={20} /> <LinkScroll to='/home'> Home </LinkScroll> </MenuItem>
+            <MenuItem style={{ fontSize: '0.85rem' }} onClick={handleConnection}><FaMobile size={18}/> Connect to Device </MenuItem>
+            <MenuItem style={{ fontSize: '0.85rem' }}><FaArrowAltCircleDown size={20} /> <LinkScroll to='/support'> Download Report </LinkScroll></MenuItem>
             <MenuItem style={{ fontSize: '0.85rem' }}><SettingsIcon fontSize='small' /><LinkScroll to='/resource'> Settings </LinkScroll></MenuItem>   
             <div className='notificationCard' 
               style={{
@@ -121,9 +138,9 @@ const Dashboard = () => {
             }}>
             <h2 style={{ color: '#fff', fontSize: '1.1rem', textAlign: 'center', marginBottom: '1rem' }}> Upgrade to Pro <FaFire size={18} color='red' /> </h2>
             <p style={{ color: '#fff', fontSize: '0.8rem', textAlign: 'justify', marginBottom: '1rem'}}> Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-            <button style={{ color: '#fff', border: 'none', borderRadius: '4rem', padding: '0.5rem', cursor: 'pointer', margin: '0 auto' }}> Upgrade </button>
+            <button style={{ color: '#fff', border: 'none', padding: '0.5rem', cursor: 'pointer', margin: '0 auto' }}> Upgrade </button>
           </div>
-          <MenuItem style={{ fontSize: '0.85rem' }}><FaInfoCircle size={18} style={{ textAlign: 'center'}}/> <LinkScroll to='/support'> Help Center </LinkScroll></MenuItem>
+          <MenuItem style={{ fontSize: '0.85rem' }}><FaInfoCircle size={18} style={{ textAlign: 'center'}}/> <LinkRouter to='/support'> Help Center </LinkRouter></MenuItem>
           <MenuItem style={{ fontSize: '0.85rem' }}>
             <Stack>
               {error && <Alert variant="danger">{error}</Alert>}
