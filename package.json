@@ -39,6 +39,8 @@
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.1",
+    "sweetalert2": "^11.10.1",
+    "sweetalert2-react-content": "^5.0.7",
     "web-vitals": "^3.5.0",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
