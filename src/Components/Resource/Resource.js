@@ -59,7 +59,7 @@ const Resource = () => {
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
 
                   <Meta title={post.title} description={post.description} />
-                  <LinkRouter to='/newpage'><Button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
+                  <LinkRouter to='/article'><Button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
                 </Card>
               </Col>
             ))}
@@ -110,7 +110,7 @@ const Resource = () => {
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
   
                   <Meta title={<span style={{ color: 'bisque' }}>{post.title}</span>}description={<span style={{ color: 'bisque' }}>{post.description}</span>}/>
-                  <LinkRouter to='/newpage'><Button style={{backgroundColor: '#602E17', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
+                  <Button style={{backgroundColor: '#602E17', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button>
                 </Card>
               </Col>
             ))}
@@ -153,7 +153,7 @@ const Resource = () => {
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
 
                   <Meta title={post.title} description={post.description} />
-                  <LinkRouter to='/newpage'><Button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
+                  <Button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button>
                 </Card>
               </Col>
             ))}
