@@ -8,6 +8,7 @@ import HomePage from '../Pages/home.js';
 import DashboardPage from '../Pages/dashboard.js';
 import SupportPage from '../Pages/support.js';
 import ResourcePage from '../Pages/resource.js';
+import ArticlePage from '../Pages/article.js';
 import SignupPage from '../Pages/signup.js';
 import LoginPage from '../Pages/login.js';
 import ProtectedRoute from '../Components/Authentication/ProtectedRoute.js';
@@ -23,8 +24,9 @@ const App = () => {
           <Route path='/home' element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
           <Route path='/support' element={<SupportPage />} />
           <Route path='/resource' element={<ResourcePage />} />
+          <Route path='/article' element={<ArticlePage />} />
           <Route path='/signup' element={<SignupPage />} />
-          <Route path='/dashboard'element={<DashboardPage/>} />
+          <Route path='/dashboard' element={<DashboardPage/>} />
         </Routes>
       </UserAuthContextProvider>
     </Router>
