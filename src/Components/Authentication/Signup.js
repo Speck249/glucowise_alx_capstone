@@ -114,7 +114,7 @@ const Signup = () => {
           </div>
 
           <div className='prompt'> 
-            <p>Already have an account? <span><LinkRouter style={{ textDecoration: 'none' }} to='/'>Log In</LinkRouter></span></p>
+          <p style={{ color: '#fff' }}>Already have an account? <span><LinkRouter style={{ textDecoration: 'none', marginLeft: '0.2rem' }} to='/'>Log In</LinkRouter></span></p>
           </div> 
         </form>
       </div>

@@ -6,7 +6,8 @@
 }
 
 .signupContainer {
-  background-color: #602E17;
+  background-image: url('../../Images/Authentication.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -24,16 +25,17 @@
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  background-color: #ffe4c4;
   width: 400px;
   margin: 0 auto;
   padding: 2rem;
+  background-color: transparent;
 }
 
 #signupForm h1 {
   font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
+  color: #fff;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -44,16 +46,17 @@
 
 .googleContainer {
   font-size: 1rem;
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  border: 2px solid  #006400;
   border-radius: 4rem;
-  background-color: #deb887;
+  background-color: transparent;
 
   &:hover {
-    background-color: #000;
+    background-color: #006400;;
     color: #fff;
     border: none;
   }
@@ -62,6 +65,7 @@
 .LineBreak {
   position: relative;
   margin: 2rem 0 2rem 0;
+  color: #fff;
 }
 
 .divider {
@@ -76,7 +80,7 @@
   left: 50%;
   transform: translateX(-50%);
   padding: 0 6px;
-  background-color: #deb887;
+  background-color: transparent;
 }
 
 #signupForm label {
@@ -84,7 +88,7 @@
   text-align: left;
   margin-bottom: 3px;
   margin-left: 0.4em;
-  color: #000;
+  color: #fff;
 }
 
 #signupForm input {
@@ -98,7 +102,7 @@
 
 .buttonContainer button {
   font-size: 1rem;
-  color: #000;
+  color: #fff;
   display: flex;
   justify-content: center;
   padding: 0.6em;
@@ -106,12 +110,13 @@
   margin-top: 1.3em;
   margin-bottom: 1.2em;
   width: 120px;
+  border: 2px solid  #006400;
   border-radius: 2em;
-  background-color: #deb887;
+  background-color: transparent;
   cursor: pointer;
 
   &:hover {
-    background-color: #000;
+    background-color: #006400;;
     color: #fff;
     border: none;
   }
