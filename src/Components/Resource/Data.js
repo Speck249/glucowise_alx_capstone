@@ -1,4 +1,4 @@
-import Growth from '../../Images/Growth.jpg';
+import Sunset from '../../Images/Sunset.jpg';
 import Stress from '../../Images/Stress.jpg';
 import Positivity from '../../Images/Positivity.jpg';
 import Highachievers from '../../Images/Highachievers.jpg';
@@ -17,9 +17,9 @@ import Intentional from '../../Images/Intentional.jpg';
 export const mindsetPosts = [
     {
       id: 'md-1',
-      title: 'Developing a Growth Mindset',
-      description: 'Discover the transforming power of a Growth mindset.',
-      image: Growth,
+      title: 'A Journey Through Nature',
+      description: 'Discover the healing powers of connecting with Mother Earth.',
+      image: Sunset,
     },
 
     {
