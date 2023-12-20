@@ -60,7 +60,7 @@
 .supportContainer {
   flex: 2;
   margin: 0 auto;
-  background-image: url('../../Images/Placeholder.jpg');
+  background-image: url('../../Images/Support.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ form {
   max-width: 550px;
   height: auto;
   width: 100%;
-  background-color: transparent;
+  background-color: #000;
   backdrop-filter: blur(20px);
   
   @media screen and (max-width: 400px) {
