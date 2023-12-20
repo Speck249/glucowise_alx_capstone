@@ -5,11 +5,11 @@ import PricingCard from './PricingCard';
 import { FaAndroid, FaApple, FaChartBar, FaChrome, FaLaptop, FaMobile } from 'react-icons/fa';
 import GlucoWise from '../../Images/GlucoWise.jpg';
 import Insurance from '../../Images/Insurance.jpg';
-import testimonialOne from '../../Images/Testimonial1.png';
-import testimonialTwo from '../../Images/Testimonial2.png';
-import testimonialThree from '../../Images/Testimonial3.png';
-import testimonialFour from '../../Images/Testimonial4.png';
-import testimonialFive from '../../Images/Testimonial5.png';
+import Adwoa from '../../Images/Adwoa.png';
+import Ama from '../../Images/Ama.png';
+import Kofi from '../../Images/Kofi.png';
+import Ngozi from '../../Images/Ngozi.png';
+import Kwame from '../../Images/Kwame.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Hero.css';
@@ -157,11 +157,11 @@ const Hero = () => {
           autoplay={true}
           autoplaySpeed={3000}
           className='testimonial-carousel'>
-            <div><img src={testimonialOne} alt='Customer Testimonial' width={350} height={320} /></div>
-            <div><img src={testimonialTwo} alt='Customer Testimonial' width={350} height={320} /></div>
-            <div><img src={testimonialThree} alt='Customer Testimonial' width={350} height={320} /></div>
-            <div><img src={testimonialFour} alt='Customer Testimonial' width={350} height={320} /></div>
-            <div><img src={testimonialFive} alt='Customer Testimonial' width={350} height={320} /></div>
+            <div><img src={Adwoa} alt='Customer Testimonial' width={350} height={320} /></div>
+            <div><img src={Ama} alt='Customer Testimonial' width={350} height={320} /></div>
+            <div><img src={Kofi} alt='Customer Testimonial' width={350} height={320} /></div>
+            <div><img src={Ngozi} alt='Customer Testimonial' width={350} height={320} /></div>
+            <div><img src={Kwame} alt='Customer Testimonial' width={350} height={320} /></div>
         </Slider>
       </div>  
     </>
