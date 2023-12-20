@@ -6,7 +6,8 @@
 }
 
 .pageContainer {
-  background-color: #602E17;
+  background-image: url('../../Images/Authentication.jpg');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -25,13 +26,14 @@
   margin-top: 4.5em;
   padding: 2em;
   border-radius: 12px;
-  background-color: #ffe4c4;
+  background-color: transparent;
 }
 
 .loginformContent h1 {
   font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
+  color: #fff;
   margin-top: 1rem;
   margin-bottom: 0.8rem;
 }
@@ -42,24 +44,25 @@
 
 .logingoogleContainer {
   font-size: 1rem;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   padding: 0.7em;
+  border: 2px solid  #006400;
   border-radius: 4rem;
-  color: #000;
-  background-color: #deb887;
+  background-color: transparent;
   width: 70%;
 
   &:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #006400;
     border: none;
   }
 }
 
 .loginLineBreak {
+  color: #fff;
   position: relative;
   margin: 2.5rem 0 2.2rem 0;
 }
@@ -75,11 +78,11 @@
   top: -11px;
   left: 45%;
   padding: 0 6px;
-  background-color: #deb887;
+  background-color: transparent;
 }
 
 .loginform label {
-  color: #000;
+  color: #fff;
   font-size: 13px;
   text-align: left;
   margin-bottom: 4px;
@@ -98,7 +101,7 @@
 
 .loginbtnContainer button {
   font-size: 1rem;
-  color: #000;
+  color: #fff;
   display: flex;
   justify-content: center;
   padding: 0.6em;
@@ -106,12 +109,13 @@
   margin-top: 1.5em;
   margin-bottom: 1em;
   width: 120px;
+  border: 2px solid  #006400;
   border-radius: 2em;
-  background-color: #deb887;
+  background-color: #000;
   cursor: pointer;
 
   &:hover {
-    background-color: #000;
+    background-color: #006400;
     color: #fff;
     border: none;
   }
