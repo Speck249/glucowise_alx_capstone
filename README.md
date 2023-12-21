@@ -1,7 +1,7 @@
 ![Landing Page](./src/Images/Banner.png)
 
 # GlucoWise - Web App
-A Web Application that serves as a comprehensive platform with curated information about a conceptual medical institution - [PAX] Private Psychiatry & Therapy Clinic. It aims to create a safe space where users can access the clinic's services right from the comfort of their home while offering registered users access to a private dashboard to conveniently schedule appointments, securely communicate with therapists, and access personalized resources designed to support their mental health journey.  
+The GlucoWise Web Application was developed with the idea of creating a User Interface for a Glucose Monitoring System which draws real-time data from a sensor Patch that measures things like Fasting glucose levels, Carbohydrate consumption and more. The GlucoWise mission is to provide accurate, non-invasive, and convenient glucose monitoring solutions that empower African people to take control of their health by replacing traditional glucose monitoring methods which involve the use of lancets and blood samples that can be painful, inconvenient, and disruptive to daily life as it requires either purchasing devices that may not be economically available to all. By providing non-invasive, accurate, and user-friendly glucose monitoring solutions, GlucoWise aims to empower less priviledged individuals with diabetes to take control of their health. Our devices enable users to make timely and informed decisions to manage their blood sugar levels effectively. With GlucoWise, we strive to improve the quality of life for people living with diabetes and contribute to a healthier future.
 
 ## Technologies
 * React.js
