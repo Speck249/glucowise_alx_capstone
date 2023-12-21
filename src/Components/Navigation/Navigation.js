@@ -9,7 +9,9 @@ import './Navigation.css';
 
 const Navigation = () => {
   const [top, setTop] = useState('');
-  
+  const handleInstant = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth'});
+  }
 // Create function that manages navigation bar page scroll.
   const stickyNavigation = ('scroll', () => {
     if (window !== undefined) {
@@ -33,14 +35,14 @@ const Navigation = () => {
 
       <nav className={`navContainer ${top}`}>
         <div className='navLogo'>
-          <LinkRouter to='/home'>
+          <button onClick={handleInstant}  >
             <img
               src={GlucoWise}
-              width={76}
-              height={68}
+              width='fit-content'
+              height= {50}
               alt='GlucoWise Logo'
             />
-          </LinkRouter>
+          </button>
         </div>
 
         <div className='sidebarContainer'>
