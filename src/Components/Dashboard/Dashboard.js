@@ -10,66 +10,50 @@ import Stack from '@mui/material/Stack';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { FaMobile, FaInfoCircle, FaFire, FaArrowAltCircleDown, FaHome } from 'react-icons/fa';
-//import { LineChart } from '@mui/x-charts/LineChart';
-//import { Chart, LineSeries, ArgumentAxis, ValueAxis } from '@devexpress/dx-react-chart-material-ui';
-//import { ArgumentScale, ValueScale } from '@devexpress/dx-react-chart';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, BarChart, Bar } from 'recharts';
 
 
-/* const ChartContent = () => {
-  const hba1cData = [
-  { month: 'Jan', value: 6.5 },
-  { month: 'Feb', value: 6.3 },
-  { month: 'Mar', value: 6.2 },
-  { month: 'Apr', value: 6.4 },
-  { month: 'May', value: 6.1 },
-  { month: 'Jun', value: 6.2 },
-];
+const GlucoseLineChart = () => {
+  // Dummy data for three months of glucose and carbohydrate levels
+  const glucoseLevel = [
+    { month: 'Sep', glucoseLevel: 100, carbohydrateLevel: 50 },
+    { month: 'Oct', glucoseLevel: 110, carbohydrateLevel: 60 },
+    { month: 'Nov', glucoseLevel: 105, carbohydrateLevel: 55 },
+  ];
 
-  const colors = {
-    Jan: 'blue',
-    Feb: 'yellow',
-    Mar: 'pink',
-    Apr: 'orange',
-    May: 'purple',
-    Jun: 'brown',
-  };
+  const fastingGlucoseLevel = '81'; // Today's fasting glucose level
 
-  const stackStrategy = {
-    stack: 'total',
-    area: true,
-    stackOffset: 'none',
-  }
-
-  const customize = {
-    height: 300,
-    legend: { hidden: true },
-    margin: { top: 5 },
-    stackingOrder: 'descending',
-  };
-
-  return (
-    <LineChart
-      xAxis={[
-      {
-        dataKey: 'month',
-        valueFormatter: (v) => v.toString(),
-      },
-    ]}
-
-    series={Object.keys(keyToLabel).map((key) => ({
-      dataKey: key,
-      label: keyToLabel[key],
-      color: colors[key],
-      showMark: false,
-      ...stackStrategy,
-    }))}
-    dataset={hba1cData}
-    {...customize}
-    />
-  );
+return (
+  <div style={{ backgroundColor: '#000', height: '100vh', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ width: '72%', margin: '3rem', padding: '3rem', borderRadius: '2rem', boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)' }}>
+      <h2 style={{ fontSize: '2.5rem', color: 'burlywood', textAlign: 'center', marginBottom: '2rem' }}>Glucose <span style={{ backgroundColor: '#602E17', padding: '0.5rem', fontSize: '1.8rem' }}>{fastingGlucoseLevel} mg/dL</span></h2>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div style={{ width: '45%', margin: '1rem' }}>
+          <LineChart width={500} height={400} data={glucoseLevel} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+            <CartesianGrid strokeDasharray="3 3" vertical={false} />
+            <XAxis dataKey="month" stroke="burlywood" />
+            <YAxis stroke="burlywood" />
+            <Tooltip contentStyle={{ backgroundColor: 'burlywood', border: 'none' }} />
+            <Legend iconType="circle" verticalAlign="top" height={30} />
+            <Line type={'monotone'} dataKey="glucoseLevel" stroke="#602E17" strokeWidth={2} activeDot={{ r: 5, stroke: 'burlywood', strokeWidth: 2, fill: '#00' }} />
+          </LineChart>
+        </div>
+        <div style={{ width: '45%', margin: '1rem' }}>
+          <BarChart width={500} height={400} data={glucoseLevel} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
+            <CartesianGrid strokeDasharray="3 3" vertical={false} />
+            <XAxis dataKey="month" stroke="bisque" />
+            <YAxis stroke="bisque" />
+            <Tooltip contentStyle={{ backgroundColor: '#602E17', border: 'none' }} />
+            <Legend iconType="circle" verticalAlign="top" height={36} />
+            <Bar dataKey="carbohydrateLevel" fill="burlywood" />
+          </BarChart>
+        </div>
+      </div>
+    </div>
+  </div>
+ );
 }
 
-*/
 const MySwal = withReactContent(Swal);
 
 const Dashboard = () => {
@@ -111,7 +95,7 @@ const Dashboard = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            backgroundColor: 'bisque',
+            backgroundColor: 'burlywood',
             position: 'fixed',
             top: 0,
             bottom: 0,
@@ -136,7 +120,7 @@ const Dashboard = () => {
                 borderRadius: '2rem',
                 backgroundColor: '#000'
             }}>
-            <h2 style={{ color: '#fff', fontSize: '1.1rem', textAlign: 'center', marginBottom: '1rem' }}> Upgrade to Pro <FaFire size={18} color='red' /> </h2>
+            <h2 style={{ color: '#fff', fontSize: '1.1rem', textAlign: 'center', marginBottom: '1rem' }}> Upgrade to Pro <FaFire size={18} color='#602E17' /> </h2>
             <p style={{ color: '#fff', fontSize: '0.8rem', textAlign: 'justify', marginBottom: '1rem'}}> Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
             <button style={{ color: '#fff', border: 'none', padding: '0.5rem', cursor: 'pointer', margin: '0 auto' }}> Upgrade </button>
           </div>
@@ -149,11 +133,10 @@ const Dashboard = () => {
           </Menu>
         </Sidebar>
       </div>
-      
-      {/* 
-      <div className='dashCharts' style={{ marginLeft: '25%'}}>
-        <ChartContent />
-      </div> */}
+       
+      <div className='dashCharts'>
+        <GlucoseLineChart />
+      </div>
     </>
   ); 
 }
