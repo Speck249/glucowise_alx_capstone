@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link as LinkRouter, useNavigate } from 'react-router-dom';
 import { useUserAuth } from '../../Context/userAuthContext';
-import { Link as LinkScroll } from 'react-scroll';
 import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
@@ -11,6 +10,7 @@ import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { FaMobile, FaInfoCircle, FaFire, FaArrowAltCircleDown, FaHome } from 'react-icons/fa';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, BarChart, Bar } from 'recharts';
+import Ngozi from '../../Images/Ngozi.jpg';
 
 
 const GlucoseLineChart = () => {
@@ -25,8 +25,8 @@ const GlucoseLineChart = () => {
 
 return (
   <div style={{ backgroundColor: '#000', height: '100vh', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <div style={{ width: '72%', margin: '3rem', padding: '3rem', borderRadius: '2rem', boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)' }}>
-      <h2 style={{ fontSize: '2.5rem', color: 'burlywood', textAlign: 'center', marginBottom: '2rem' }}>Glucose <span style={{ backgroundColor: '#602E17', padding: '0.5rem', fontSize: '1.8rem' }}>{fastingGlucoseLevel} mg/dL</span></h2>
+    <div style={{ width: '70%', margin: '3rem', padding: '3rem', borderRadius: '2rem', boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)' }}>
+      <h2 style={{ fontSize: '2.5rem', color: 'burlywood', textAlign: 'left', marginLeft: '3rem', marginBottom: '2rem' }}>Glucose <span style={{ backgroundColor: '#602E17', padding: '0.5rem', fontSize: '1.8rem' }}>{fastingGlucoseLevel} mg/dL</span></h2>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div style={{ width: '45%', margin: '1rem' }}>
           <LineChart width={500} height={400} data={glucoseLevel} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
@@ -102,12 +102,11 @@ const Dashboard = () => {
             width: '20%',
             height: '100%'
           }}>
-            <MenuItem style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center', marginTop: '3rem' }}> GlucoWise </MenuItem>
-              <hr style={{ width: '75%', margin: '0 auto'}}/>
-            <MenuItem style={{ marginTop: '1rem', fontSize: '0.85rem'}}><FaHome size={20} /> <LinkScroll to='/home'> Home </LinkScroll> </MenuItem>
+            <div className='profileImage' style={{ width: '50%', margin: '0 auto', marginTop: '2rem' }}><img src={Ngozi} width={100} height={100} style={{ borderRadius: '4rem' }} alt='Pretty Woman'/></div>
+            <MenuItem style={{ marginTop: '1rem', fontSize: '0.85rem' }}><FaHome size={20} /> <LinkRouter to='/home'> Home </LinkRouter> </MenuItem>
             <MenuItem style={{ fontSize: '0.85rem' }} onClick={handleConnection}><FaMobile size={18}/> Connect to Device </MenuItem>
-            <MenuItem style={{ fontSize: '0.85rem' }}><FaArrowAltCircleDown size={20} /> <LinkScroll to='/support'> Download Report </LinkScroll></MenuItem>
-            <MenuItem style={{ fontSize: '0.85rem' }}><SettingsIcon fontSize='small' /><LinkScroll to='/resource'> Settings </LinkScroll></MenuItem>   
+            <MenuItem style={{ fontSize: '0.85rem' }}><FaArrowAltCircleDown size={20} /> Download Report </MenuItem>
+            <MenuItem style={{ fontSize: '0.85rem' }}><SettingsIcon fontSize='small' /> Settings </MenuItem>   
             <div className='notificationCard' 
               style={{
                 display: 'flex',
@@ -129,7 +128,7 @@ const Dashboard = () => {
             <Stack>
               {error && <Alert variant="danger">{error}</Alert>}
             </Stack>
-            <LogoutIcon /> <LinkScroll to='/' onClick={handleLogout}> Logout </LinkScroll></MenuItem>
+            <LogoutIcon /> <LinkRouter to='/' onClick={handleLogout}> Logout </LinkRouter></MenuItem>
           </Menu>
         </Sidebar>
       </div>
