@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
-import { useUserAuth } from '../../Context/userAuthContext';
 import Scrollspy from 'react-scrollspy';
 import { FaBars } from 'react-icons/fa';
 import GlucoWise from '../../Images/Logo.png';
@@ -34,14 +33,14 @@ const Navigation = () => {
 
       <nav className={`navContainer ${top}`}>
         <div className='navLogo'>
-          <div>
+          <LinkRouter to='/home'>
             <img
               src={GlucoWise}
               width={76}
               height={68}
               alt='GlucoWise Logo'
             />
-          </div>
+          </LinkRouter>
         </div>
 
         <div className='sidebarContainer'>
