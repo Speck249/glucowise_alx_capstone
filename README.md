@@ -1,4 +1,4 @@
-![Landing Page](/src/images/Banner.png)
+![Landing Page](./src/Images/Banner.png)
 
 # GlucoWise - Web App
 A Web Application that serves as a comprehensive platform with curated information about a conceptual medical institution - [PAX] Private Psychiatry & Therapy Clinic. It aims to create a safe space where users can access the clinic's services right from the comfort of their home while offering registered users access to a private dashboard to conveniently schedule appointments, securely communicate with therapists, and access personalized resources designed to support their mental health journey.  
