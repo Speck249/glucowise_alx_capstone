@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+![Landing Page](/src/images/Banner.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GlucoWise - Web App
+A Web Application that serves as a comprehensive platform with curated information about a conceptual medical institution - [PAX] Private Psychiatry & Therapy Clinic. It aims to create a safe space where users can access the clinic's services right from the comfort of their home while offering registered users access to a private dashboard to conveniently schedule appointments, securely communicate with therapists, and access personalized resources designed to support their mental health journey.  
 
-## Available Scripts
+## Technologies
+* React.js
+* CSS
+* Material UI
+* AntD
+* Sweet Alert
+* Recharts
+* Firebase
+* VSCode
 
-In the project directory, you can run:
+## Getting Started
+To view the website, click on the link here: https://glucowise-fd1e6.web.app/ .
 
-### `npm start`
+To run in development mode:
+1. Install *node.js* >=18,
+2. Install *git* & *Clone* this Repository,
+3. Install Project Dependencies >>> *npm install*,
+4. Start Development Server >>> *npm start*,
+5. View website at http://localhost:3000 where corresponding changes to code will be displayed;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage Instructions
+View Project folder & navigate to */src/components* to find all Front-End inputs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Be aware that website uses Firebase Backend component setup (Authentication + Firestore + Hosting) with Front-End Development as the primary focus.
 
-### `npm test`
+## Attribution
+Yet again, much respect to Freepik that offers a diverse range of assets. A few high-quality images which have enhanced the visual quality of the website were sourced from freepik, find below a mention of the sources:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Asset: 'Hero Section' | source: https://bit.ly/3RQlosz
+* Asset: 'About Section' | source: https://bit.ly/3GQ6axo
+* Asset: 'Insurance Section' | source: https://bit.ly/3tqnS7Q
 
-### `npm run build`
+Please be sure to credit the work of these artists & contributors for your own projects. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributions
+Feel free to fork this repo and make your own changes, there are definitely enhacements to be made. Just make sure to give due credit by linking to Speck249 ;)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks for stopping by!
