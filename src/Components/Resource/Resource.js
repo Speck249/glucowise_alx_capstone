@@ -1,13 +1,22 @@
 import React from 'react';
-import { Row, Col, Card, Button } from 'antd';
-import { Link as LinkRouter } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Row, Col, Card } from 'antd';
 import { FaLinkedin, FaFacebook, FaTwitter, FaQuora, FaYoutube, FaWhatsapp, FaArrowUp } from 'react-icons/fa';
 import { mindsetPosts, dietPosts, lifestylePosts } from './Data';
 
 
 const { Meta } = Card;
 const Resource = () => {
-// Return component output to Resource page. 
+  const navigate = useNavigate();
+  const handleRead = () => {
+     navigate('/article');
+  }
+
+  const handleScroll = () => {
+     window.scrollTo( { top: 0, behavior:'smooth'} );
+  }
+
+  // Return component output to Resource page. 
   return (
     <div className='blogContainer'
       style={{ 
@@ -59,7 +68,7 @@ const Resource = () => {
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
 
                   <Meta title={post.title} description={post.description} />
-                  <LinkRouter to='/article'><Button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button></LinkRouter>
+                  <button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</button>
                 </Card>
               </Col>
             ))}
@@ -110,7 +119,7 @@ const Resource = () => {
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
   
                   <Meta title={<span style={{ color: 'bisque' }}>{post.title}</span>}description={<span style={{ color: 'bisque' }}>{post.description}</span>}/>
-                  <Button style={{backgroundColor: '#602E17', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button>
+                  <button onClick={handleRead}  style={{backgroundColor: '#602E17', color: 'bisque', border: 'none', marginTop: '1rem' }}>Read More</button>
                 </Card>
               </Col>
             ))}
@@ -153,7 +162,7 @@ const Resource = () => {
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
 
                   <Meta title={post.title} description={post.description} />
-                  <Button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem'}}>Read More</Button>
+                  <button style={{backgroundColor: '#000', color: 'bisque', border: 'none', marginTop: '1rem' }}>Read More</button>
                 </Card>
               </Col>
             ))}
@@ -161,7 +170,7 @@ const Resource = () => {
         </div>
       </section>
 
-      <a href='#' style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', marginTop: '3rem', marginBottom: '2rem' }}><FaArrowUp size={30} style={{ color: 'bisque' }}/> </a>
+      <button onClick={handleScroll} style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', marginTop: '3rem', marginBottom: '2rem', backgroundColor: 'transparent' }}><FaArrowUp size={35} style={{ color: 'bisque' }}/> </button>
 
       <div className='socialMedia' style={{color: 'bisque', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}>
         Follow us at 
