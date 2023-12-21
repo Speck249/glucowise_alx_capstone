@@ -95,7 +95,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className='footerCopyright' to='https://github.com/Speck249/'>PAX &copy; {new Date().getFullYear()} All Rights Reserved</div>
+            <div className='footerCopyright' to='https://github.com/Speck249/'>GlucoWise &copy; {new Date().getFullYear()} All Rights Reserved</div>
               </div>
           </div>
   );
