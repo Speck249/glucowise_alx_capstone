@@ -125,9 +125,7 @@ const Dashboard = () => {
           </div>
           <MenuItem style={{ fontSize: '0.85rem' }}><FaInfoCircle size={18} style={{ textAlign: 'center'}}/> <LinkRouter to='/support'> Help Center </LinkRouter></MenuItem>
           <MenuItem style={{ fontSize: '0.85rem' }}>
-            <Stack>
-              {error && <Alert variant="danger">{error}</Alert>}
-            </Stack>
+            <Stack>{error && <Alert variant="danger">{error}</Alert>}</Stack>
             <LogoutIcon /> <LinkRouter to='/' onClick={handleLogout}> Logout </LinkRouter></MenuItem>
           </Menu>
         </Sidebar>
