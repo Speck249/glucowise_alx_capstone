@@ -30,7 +30,7 @@ export function UserAuthContextProvider({ children }) {
     }
 
     if (password.length < 6) {
-      throw new Error('Please enter stronger Password');
+      throw new Error('Please Enter Stronger Password');
     }
 
     try {
@@ -45,7 +45,7 @@ export function UserAuthContextProvider({ children }) {
         throw new Error('Invalid Email Address');
 
       } else if (error.code === 'auth/weak-password') {
-        throw new Error('Please enter a stronger password');
+        throw new Error('Please Enter Stronger Password');
 
       } else {
         throw error;
