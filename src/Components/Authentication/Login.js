@@ -102,7 +102,7 @@ const LogIn = () => {
                 name='userPassword'
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder='Create a strong password'
+                placeholder='Please Enter Your Password'
                 autoComplete='on'
                 required
             />

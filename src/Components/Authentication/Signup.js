@@ -104,7 +104,7 @@ const Signup = () => {
             name='pwd-input'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder='Create a strong password'
+            placeholder='Create a Strong Password'
             autoComplete='on'
             required
           />
