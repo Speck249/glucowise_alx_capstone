@@ -1,4 +1,4 @@
-import Sunset from '../../Images/Sunset.jpg';
+import Mountain from '../../Images/Mountain.jpg';
 import Stress from '../../Images/Stress.jpg';
 import Positivity from '../../Images/Positivity.jpg';
 import Highachievers from '../../Images/Highachievers.jpg';
@@ -19,7 +19,7 @@ export const mindsetPosts = [
       id: 'md-1',
       title: 'A Journey Through Nature',
       description: 'Discover the healing powers of connecting with Mother Earth.',
-      image: Sunset,
+      image: Mountain,
     },
 
     {
@@ -59,9 +59,10 @@ export const mindsetPosts = [
 export const dietPosts = [
     {
       id: 'dp-1',
-      title: 'Discover Paleo Diet',
-      description: 'Discover the keys to a healthy and nourshing diet.',
-      image: Paleo,
+      title: 'Vitality in a Bowl',
+      description: 'Learn the crucial role of balanced diet in preventing illness.',
+      image: Bowl,
+      url: './Article'
     },        
     {
       id: 'dp-2',
@@ -77,9 +78,9 @@ export const dietPosts = [
     },
     {
       id: 'dp-4',
-      title: 'Vitality in a Bowl',
-      description: 'Learn the crucial role of balanced diet in preventing illness.',
-      image: Bowl,
+      title: 'Discover Paleo Diet',
+      description: 'Discover the keys to a healthy and nourshing diet.',
+      image: Paleo,
     }
   ];
 
@@ -87,15 +88,15 @@ export const dietPosts = [
 export const lifestylePosts = [
     {
       id: 'lp-1',
-      title: 'The myth of work-life balance',
-      description: 'Design a lifestyle of your greatest aspirations.',
-      image: Balance,
+      title: 'Intentional Living',
+      description: 'Uncover the transformative benefits of mindfulness.',
+      image: Intentional,
     },        
     {
       id: 'lp-2',
-      title: 'Living in the Now',
-      description: 'Cultivate self-care practices, and the of joy moments.',
-      image: Now,
+      title: 'The myth of work-life balance',
+      description: 'Design a lifestyle of your greatest aspirations.',
+      image: Balance,
     }, 
     {
       id: 'lp-3',
@@ -104,12 +105,9 @@ export const lifestylePosts = [
       image: Meditation,
     },
     {
-      id: 'lp-3',
-      title: 'Intentional Living',
-      description: 'Uncover the transformative benefits of mindfulness.',
-      image: Intentional,
+      id: 'lp-4',
+      title: 'Living in the Now',
+      description: 'Cultivate self-care practices, and the of joy moments.',
+      image: Now,
     }
   ];
-
-
-  
