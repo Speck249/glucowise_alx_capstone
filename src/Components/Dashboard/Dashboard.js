@@ -22,11 +22,15 @@ const GlucoseLineChart = () => {
   ];
 
   const fastingGlucoseLevel = '81'; // Today's fasting glucose level
+  const now = new Date();
+  const day = now.toDateString();
+  const currentTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
 return (
   <div style={{ backgroundColor: '#000', height: '100vh', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <div style={{ width: '70%', margin: '3rem', padding: '3rem', borderRadius: '2rem', boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)' }}>
-      <h2 style={{ fontSize: '2.5rem', color: 'burlywood', textAlign: 'left', marginLeft: '3rem', marginBottom: '2rem' }}>Glucose <span style={{ backgroundColor: '#602E17', padding: '0.5rem', fontSize: '1.8rem' }}>{fastingGlucoseLevel} mg/dL</span></h2>
+      <h2 style={{ fontSize: '2.5rem', color: 'burlywood', textAlign: 'left', marginLeft: '3rem', marginBottom: '1.8rem' }}>{day} <br />
+      <span style={{ backgroundColor: '#602E17', padding: '0.5rem', fontSize: '1.2rem' }}>Glucose Level at {currentTime} is {fastingGlucoseLevel} mg/dL</span></h2>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div style={{ width: '45%', margin: '1rem' }}>
           <LineChart width={500} height={400} data={glucoseLevel} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
@@ -82,7 +86,7 @@ const Dashboard = () => {
       if (result.isConfirmed) {
         navigate('/dashboard');
       } else {
-        navigate('/home');
+        navigate('/dashboard');
       }
     });
   }
@@ -103,7 +107,7 @@ const Dashboard = () => {
             height: '100%'
           }}>
             <div className='profileImage' style={{ width: '50%', margin: '0 auto', marginTop: '2rem' }}><img src={Ngozi} width={100} height={100} style={{ borderRadius: '4rem' }} alt='Pretty Woman'/></div>
-            <MenuItem style={{ marginTop: '1rem', fontSize: '0.85rem' }}><FaHome size={20} /> <LinkRouter to='/home'> Home </LinkRouter> </MenuItem>
+            <MenuItem style={{ fontSize: '0.85rem' }}><FaHome size={20} /> <LinkRouter to='/home' style={{ textDecoration: 'none', color: '#000' }}> Home </LinkRouter> </MenuItem>
             <MenuItem style={{ fontSize: '0.85rem' }} onClick={handleConnection}><FaMobile size={18}/> Connect to Device </MenuItem>
             <MenuItem style={{ fontSize: '0.85rem' }}><FaArrowAltCircleDown size={20} /> Download Report </MenuItem>
             <MenuItem style={{ fontSize: '0.85rem' }}><SettingsIcon fontSize='small' /> Settings </MenuItem>   
@@ -123,10 +127,10 @@ const Dashboard = () => {
             <p style={{ color: '#fff', fontSize: '0.8rem', textAlign: 'justify', marginBottom: '1rem'}}> Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
             <button style={{ color: '#fff', border: 'none', padding: '0.5rem', cursor: 'pointer', margin: '0 auto' }}> Upgrade </button>
           </div>
-          <MenuItem style={{ fontSize: '0.85rem' }}><FaInfoCircle size={18} style={{ textAlign: 'center'}}/> <LinkRouter to='/support'> Help Center </LinkRouter></MenuItem>
+          <MenuItem style={{ fontSize: '0.85rem' }}><FaInfoCircle size={18} /> <LinkRouter to='/support' style={{ textDecoration: 'none', color: '#000' }}> Help Center </LinkRouter></MenuItem>
           <MenuItem style={{ fontSize: '0.85rem' }}>
             <Stack>{error && <Alert variant="danger">{error}</Alert>}</Stack>
-            <LogoutIcon /> <LinkRouter to='/' onClick={handleLogout}> Logout </LinkRouter></MenuItem>
+            <LogoutIcon /> <LinkRouter to='/' onClick={handleLogout} style={{ textDecoration: 'none', color: '#000' }}> Logout </LinkRouter></MenuItem>
           </Menu>
         </Sidebar>
       </div>
