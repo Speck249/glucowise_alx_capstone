@@ -12,6 +12,7 @@ const Navigation = () => {
   const handleInstant = () => {
     window.scrollTo({ top: 0, behavior: 'smooth'});
   }
+
 // Create function that manages navigation bar page scroll.
   const stickyNavigation = ('scroll', () => {
     if (window !== undefined) {
@@ -25,7 +26,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', stickyNavigation);
     }, [stickyNavigation]); 
 
-  // Return component output to Home page.
+  // Return component output to Homepage.
   return (
     <Scrollspy
       items={ ['About', 'Pricing', 'Insurance'] }
