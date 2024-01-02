@@ -3,7 +3,7 @@ import { Link as LinkRouter } from 'react-router-dom';
 import Slider from 'react-slick';
 import PricingCard from './PricingCard';
 import { FaAndroid, FaApple, FaChartBar, FaChrome, FaLaptop, FaMobile } from 'react-icons/fa';
-import GlucoWise from '../../Images/GlucoWise.jpg';
+import GlucoWise from '../../Images/Empowering.jpg';
 import Insurance from '../../Images/Insurance.jpg';
 import Adwoa from '../../Images/Adwoa.png';
 import Ama from '../../Images/Ama.png';
@@ -99,7 +99,7 @@ const Hero = () => {
           <h2>About GlucoWise</h2>
           <div className='aboutContainer'>
             <div className='imgWrap1'>
-              <img src={GlucoWise} alt='Journal' width={630} height={300}/>
+              <img src={GlucoWise} alt='Woman with Sensor Patch' width={560} height={320} style={{ border: 'none', borderRadius: '1.2rem' }} />
             </div>
         
             <div className='textWrap'>
@@ -143,7 +143,7 @@ const Hero = () => {
             </div>
 
             <div className='imgWrap2'>
-              <img src={Insurance} alt='Journal' width={450} height={400}/>
+              <img src={Insurance} alt='Journal' width={480} height={380} style={{ border: 'none', borderRadius: '1.2rem' }} />
             </div>
           </div>
         </section>
