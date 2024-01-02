@@ -3,6 +3,10 @@ import headerImg from '../../Images/Bowl.jpg';
 import parImg from '../../Images/Protein.jpg';
 
 const Article = () => {
+  const handleTop = () => {
+    window.scrollTo( { top: 0, behavior: 'smooth'} )
+  }
+
   return (
     <div className="blogpageContainer" style={{ backgroundColor: '#000'}}>
     <div className="blog-container" 
@@ -50,16 +54,6 @@ const Article = () => {
           and wholesome ingredients can boost our vitality and fortify our bodies against diseases.
           </p>
 
-          <blockquote className="blog-quote" 
-            style={{ 
-              fontSize: '1rem', 
-              fontStyle: 'italic', 
-              margin: '2rem 0', 
-              color: 'grey', 
-              textAlign: 'center' }}>
-            "In every walk with nature, one receives far more than he seeks." ~ John Muir
-          </blockquote>
-
           <p style={{ marginTop: '1rem' }}>
           In the words of renowned nutritionist Michael Pollan, "Don't eat anything your great-grandmother wouldn't recognize as food." This 
           simple advice encapsulates the essence of a balanced and nourishing meal. Opting for whole, unprocessed foods such as fruits, vegetables,
@@ -99,19 +93,11 @@ const Article = () => {
           opportunity to nourish our bodies and enhance our overall well-being. By making informed choices and embracing the power of a nutritious meal, we embark on a journey towards a healthier and more vibrant life.
           </p>
 
-          <blockquote className="blog-quote" 
-            style={{ 
-              fontSize: '1rem', 
-              fontStyle: 'italic', 
-              margin: '2rem 0', 
-              color: 'grey', 
-              textAlign: 'center' }}>
-            "The food you eat can be either the safest and most powerful form of medicine or the slowest form of poison." - Ann Wigmore
-          </blockquote>
-
           <p style={{ marginTop: '1rem' }}>Choose wisely, for vitality lies in the bowl before you.</p>
           </div>
       </div>
+
+      <p onClick={handleTop} style={{ cursor: 'pointer', marginTop: '3rem', color: '#006400', textAlign: 'center', fontWeight: 'bold' }}>Back to Top</p>
     </div>
     </div>
   );
