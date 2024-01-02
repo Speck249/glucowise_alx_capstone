@@ -7,9 +7,6 @@ The GlucoWise Web Application was developed with the idea of creating a User Int
 * React.js
 * CSS
 * Material UI
-* AntD
-* Sweet Alert
-* Recharts
 * Firebase
 * VSCode
 
@@ -32,8 +29,8 @@ Be aware that website uses Firebase Backend component setup (Authentication + Fi
 Yet again, much respect to Freepik that offers a diverse range of assets. A few high-quality images which have enhanced the visual quality of the website were sourced from freepik, find below a mention of the sources:
 
 * Asset: 'Hero Section' | source: https://bit.ly/3RQlosz
-* Asset: 'About Section' | source: https://bit.ly/3GQ6axo
-* Asset: 'Insurance Section' | source: https://bit.ly/3tqnS7Q
+* Asset: 'About Section' | source: https://bit.ly/3S6DAP6
+* Asset: 'Insurance Section' | source: https://bit.ly/3S3Dmaf
 
 Please be sure to credit the work of these artists & contributors for your own projects. 
 
