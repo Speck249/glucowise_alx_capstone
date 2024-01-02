@@ -112,7 +112,7 @@ const LogIn = () => {
             </div>
 
             <div className='loginprompt'> 
-              <p style={{ color: '#fff' }}>New to GlucoWise? <span><LinkRouter style={{ textDecoration: 'none', marginLeft: '0.2rem' }} to='/signup'>Register</LinkRouter></span></p>
+              <p style={{ color: '#fff' }}>New to GlucoWise? <span><LinkRouter style={{ textDecoration: 'none', color: '#006400', fontWeight: 'bold', marginLeft: '0.2rem' }} to='/signup'>Register</LinkRouter></span></p>
             </div> 
           </form>
         </div>
