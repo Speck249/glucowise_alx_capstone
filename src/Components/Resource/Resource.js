@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Row, Col, Card } from 'antd';
 import { FaLinkedin, FaFacebook, FaTwitter, FaQuora, FaYoutube, FaWhatsapp, FaArrowUp } from 'react-icons/fa';
 import { mindsetPosts, dietPosts, lifestylePosts } from './Data';
@@ -7,13 +6,8 @@ import { mindsetPosts, dietPosts, lifestylePosts } from './Data';
 
 const { Meta } = Card;
 const Resource = () => {
-  const navigate = useNavigate();
-  const handleRead = () => {
-     navigate('/article');
-  }
-
   const handleScroll = () => {
-     window.scrollTo( { top: 0, behavior:'smooth'} );
+    window.scrollTo( { top: 0, behavior:'smooth'} );
   }
 
   // Return component output to Resource page. 
@@ -119,7 +113,7 @@ const Resource = () => {
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
   
                   <Meta title={<span style={{ color: 'bisque' }}>{post.title}</span>}description={<span style={{ color: 'bisque' }}>{post.description}</span>}/>
-                  <button onClick={handleRead}  style={{backgroundColor: '#602E17', color: 'bisque', border: 'none', marginTop: '1rem' }}>Read More</button>
+                  <button style={{backgroundColor: '#602E17', border: 'none', marginTop: '1rem' }}><a href={post.url} style={{ color: 'bisque' }}>Read More</a></button>
                 </Card>
               </Col>
             ))}
@@ -135,6 +129,7 @@ const Resource = () => {
             display: 'flex', 
             padding: '2rem',
             marginTop: '1rem',
+            marginBottom: '2rem',
             border: 'none',
             borderRadius: '2rem'
           }}>
@@ -170,7 +165,7 @@ const Resource = () => {
         </div>
       </section>
 
-      <button onClick={handleScroll} style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', marginTop: '3rem', marginBottom: '2rem', backgroundColor: 'transparent' }}><FaArrowUp size={35} style={{ color: 'bisque' }}/> </button>
+      <button onClick={handleScroll} style={{ margin:'0 auto', marginTop: '2rem', marginBottom: '2rem', backgroundColor: 'transparent' }}><FaArrowUp size={35} style={{ color: 'bisque' }}/> </button>
 
       <div className='socialMedia' style={{color: 'bisque', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}>
         Follow us at 
