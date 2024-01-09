@@ -21,7 +21,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   color: burlywood;
-  /* Add additional styling as desired */
 }
 
 .infoContainer {
@@ -81,14 +80,22 @@
   margin-bottom: 3rem;
 }
 
-.siteFeature #About h2,
+.siteFeature #About h2 {
+  font-size: 2.7rem;
+  color: #602E17;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
 .siteFeature #Pricing h2,
 .siteFeature #Insurance h2 {
   font-size: 2.7rem;
   color: #602E17;
   text-align: center;
   font-weight: bold;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
