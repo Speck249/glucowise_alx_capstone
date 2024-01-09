@@ -12,7 +12,9 @@ import ArticlePage from '../Pages/article.js';
 import SignupPage from '../Pages/signup.js';
 import LoginPage from '../Pages/login.js';
 import ProtectedRoute from '../Components/Authentication/ProtectedRoute.js';
+import CustomError from '../Pages/custom404.js';
 import './App.css';
+
 
 
 const App = () => {
@@ -27,6 +29,7 @@ const App = () => {
           <Route path='/article' element={<ArticlePage />} />
           <Route path='/signup' element={<SignupPage />} />
           <Route path='/dashboard' element={<DashboardPage/>} />
+          <Route path='/custom404' element={<CustomError />} />
         </Routes>
       </UserAuthContextProvider>
     </Router>
