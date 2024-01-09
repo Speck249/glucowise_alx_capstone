@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
 import { Row, Col, Card } from 'antd';
 import { FaLinkedin, FaFacebook, FaTwitter, FaQuora, FaYoutube, FaWhatsapp, FaArrowUp } from 'react-icons/fa';
 import { mindsetPosts, dietPosts, lifestylePosts } from './Data';
@@ -169,11 +170,11 @@ const Resource = () => {
 
       <div className='socialMedia' style={{color: 'bisque', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}>
         Follow us at 
-        <div className='sm-icon'><FaLinkedin aria-label='LinkedIn' size={25} /></div>
-        <div className='sm-icon'><FaTwitter aria-label='Twitter' size={25} /></div>
-        <div className='sm-icon'><FaFacebook aria-label='Facebook' size={25} /></div>
-        <div className='sm-icon'><FaQuora aria-label='Quora' size={25} /></div>
-        <div className='sm-icon'><FaYoutube aria-label='YouTube' size={25} /></div>
+        <div className='sm-icon'><LinkRouter to='https://www.linkedin.com/' target='_blank'><FaLinkedin aria-label='LinkedIn' size={25} style={{ textDecoration: 'none', color: 'bisque'}} /></LinkRouter></div>
+        <div className='sm-icon'><LinkRouter to='https://www.twitter.com/' target='_blank'><FaTwitter aria-label='Twitter' size={25} style={{ textDecoration: 'none', color: 'bisque'}} /></LinkRouter></div>
+        <div className='sm-icon'><LinkRouter to='https://www.facebook.com/' target='_blank'><FaFacebook aria-label='Facebook' size={25} style={{ textDecoration: 'none', color: 'bisque'}} /></LinkRouter></div>
+        <div className='sm-icon'><LinkRouter to='https://www.quora.com/' target='_blank'><FaQuora aria-label='Quora' size={25} style={{ textDecoration: 'none', color: 'bisque'}} /></LinkRouter></div>
+        <div className='sm-icon'><LinkRouter to='https://www.youtube.com/' target='_blank'><FaYoutube aria-label='YouTube' size={25} style={{ textDecoration: 'none', color: 'bisque'}} /></LinkRouter></div>
         <div className='sm-icon'><FaWhatsapp aria-label='Whatsapp' size={25} /></div>
       </div>
     </div>
