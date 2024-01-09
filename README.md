@@ -31,6 +31,7 @@ Yet again, much respect to Freepik that offers a diverse range of assets. A few 
 * Asset: 'Hero Section' | source: https://bit.ly/3RQlosz
 * Asset: 'About Section' | source: https://bit.ly/3S6DAP6
 * Asset: 'Insurance Section' | source: https://bit.ly/3S3Dmaf
+* Asset: 'Custom Page Not Found' | source: https://bit.ly/3vro8nN 
 
 Please be sure to credit the work of these artists & contributors for your own projects. 
 
