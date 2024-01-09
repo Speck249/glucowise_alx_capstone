@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as LinkRouter } from 'react-router-dom';
+import { Link as LinkRouter, useNavigate } from 'react-router-dom';
 import { Row, Col, Card } from 'antd';
 import { FaLinkedin, FaFacebook, FaTwitter, FaQuora, FaYoutube, FaWhatsapp, FaArrowUp } from 'react-icons/fa';
 import { mindsetPosts, dietPosts, lifestylePosts } from './Data';
@@ -7,8 +7,14 @@ import { mindsetPosts, dietPosts, lifestylePosts } from './Data';
 
 const { Meta } = Card;
 const Resource = () => {
+  const navigate = useNavigate();
+
   const handleScroll = () => {
     window.scrollTo( { top: 0, behavior:'smooth'} );
+  }
+
+  const handleBlog = () => {
+    navigate('/blog');
   }
 
   // Return component output to Resource page. 
@@ -114,7 +120,7 @@ const Resource = () => {
                   cover={ <img src={post.image} alt={post.title} style={{backgroundRepeat: 'no-repeat'}} />} >
   
                   <Meta title={<span style={{ color: 'bisque' }}>{post.title}</span>}description={<span style={{ color: 'bisque' }}>{post.description}</span>}/>
-                  <button style={{backgroundColor: '#602E17', border: 'none', marginTop: '1rem' }}><a href={post.url} style={{ color: 'bisque' }}>Read More</a></button>
+                  <button onClick={handleBlog} style={{backgroundColor: '#602E17', border: 'none', marginTop: '1rem' }}>Read More</button>
                 </Card>
               </Col>
             ))}
