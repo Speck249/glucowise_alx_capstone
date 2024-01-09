@@ -62,7 +62,6 @@ export const dietPosts = [
       title: 'Vitality in a Bowl',
       description: 'Learn the crucial role of balanced diet in preventing illness.',
       image: Bowl,
-      url: './Article'
     },        
     {
       id: 'dp-2',
