@@ -8,14 +8,12 @@ import HomePage from '../Pages/home.js';
 import DashboardPage from '../Pages/dashboard.js';
 import SupportPage from '../Pages/support.js';
 import ResourcePage from '../Pages/resource.js';
-import BlogPage from '../Pages/Blog.js';
+import BlogPage from '../Pages/blog.js';
 import SignupPage from '../Pages/signup.js';
 import LoginPage from '../Pages/login.js';
 import ProtectedRoute from '../Components/Authentication/ProtectedRoute.js';
 import CustomError from '../Pages/custom404.js';
 import './App.css';
-
-
 
 
 const App = () => {
