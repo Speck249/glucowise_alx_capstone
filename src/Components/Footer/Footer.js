@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { FaFacebook, FaLinkedin, FaQuora, FaTwitter } from 'react-icons/fa';
@@ -77,17 +78,17 @@ const Footer = () => {
 
               <div className='footerLinkWrapper'>
                 <div className='footerLinks'>
-                  <div className='footerLinkName' style={{ marginLeft: '0.8rem'}}>SUPPORT</div>
-                    <div className='footerLink' to='https://www.facebook.com/' target='_blank'><FaFacebook style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /> Facebook</div>
-                    <div className='footerLink' to='https://www.linkedin.com/' target='_blank'><FaLinkedin style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /> LinkedIn</div>
-                    <div className='footerLink' to='https://www.twitter.com/' target='_blank'><FaTwitter style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /> Twitter</div>
-                    <div className='footerLink' to='https://www.quora.com/' target='_blank'><FaQuora style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /> Quora</div>
+                  <div className='footerLinkName' style={{ marginLeft: '0.8rem'}}>SOCIALS</div>
+                    <div className='footerLink'><FaFacebook style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /><LinkRouter to='https://www.facebook.com/' target='_blank' style={{ textDecoration: 'none', color: 'bisque' }}> Facebook </LinkRouter></div>
+                    <div className='footerLink'><FaLinkedin style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /><LinkRouter to='https://www.linkedin.com/' target='_blank' style={{ textDecoration: 'none', color: 'bisque' }}> LinkedIn </LinkRouter></div>
+                    <div className='footerLink'><FaTwitter style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /><LinkRouter to='https://www.twitter.com/' target='_blank' style={{ textDecoration: 'none', color: 'bisque' }}> Twitter </LinkRouter></div>
+                    <div className='footerLink'><FaQuora style={{ marginRight: '0.3rem', marginLeft: '0.8rem' }} /><LinkRouter to='https://www.quora.com/' target='_blank' style={{ textDecoration: 'none', color: 'bisque' }}> Quora </LinkRouter></div>
                 </div>
               </div>
 
                 <div className='footerLinks'>
                   <div className='footerLinkName'>RESOURCE</div>
-                  <div className='footerLink'>Health Articles</div>
+                  <div className='footerLink'><LinkRouter to='/article' style={{ textDecoration: 'none', color: 'bisque' }}>Health Articles</LinkRouter></div>
                   <div className='footerLink'>Copyright</div>
                   <div className='footerLink'>Accessibility</div>
                   <div className='footerLink'>Privacy Policy</div>
