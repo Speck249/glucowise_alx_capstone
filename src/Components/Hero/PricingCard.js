@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
+
 
 const PricingCard = ({ title, price, features }) => {
   return (
@@ -13,6 +15,7 @@ const PricingCard = ({ title, price, features }) => {
         border: 'none', 
         borderRadius: '1rem' 
     }}>
+    
       <div className='pricing-header' style={{ color: '#602E17' }}>
         <h2 style={{ fontSize: '2rem', fontWeight: 'bolder', textAlign: 'center', marginBottom: '2rem'}}>{title}</h2>
         <p className='price' style={{ fontSize: '0.9rem', color: '#602E17', marginBottom: '2.5rem', backgroundColor: 'burlywood', padding: '1rem' }}>{price}</p>
@@ -23,7 +26,7 @@ const PricingCard = ({ title, price, features }) => {
           <span style={{ marginRight: '0.5rem'}}>&#x2713;</span>{feature}</li>
         ))}
       </ul>
-      <button className='btn-select' style={{ width: '50%', margin: '0 auto' }}>Select Plan</button>
+      <LinkRouter to='/custom404'><button className='btn-select' style={{ width: '50%', margin: '0 auto' }}>Select Plan</button></LinkRouter>
     </div>
   );
 };
