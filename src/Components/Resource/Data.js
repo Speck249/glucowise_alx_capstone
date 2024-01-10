@@ -32,7 +32,7 @@ export const mindsetPosts = [
     {
       id: 'md-3',
       title: 'The Power of Positivity',
-      description: 'The power of a positive mindset to unleash a potential.',
+      description: "The power of a positive mindset to unleash a potential you didn't know you had.",
       image: Positivity,
     },
 
